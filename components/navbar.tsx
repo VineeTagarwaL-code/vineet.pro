@@ -18,7 +18,7 @@ export const Navbar = () => {
   return (
     <div className="md:flex justify-center items-center hidden ">
       <div className=" rounded-full mb-12 z-[100]  backdrop-blur-md  px-16 py-6 mt-3 ">
-        <nav className="flex gap-[150px] relative justify-start w-full z-[100]  rounded-lg">
+        <nav className="flex gap-[100px] relative justify-start w-full z-[100]  rounded-lg">
           {Navlinks.map((item, index) => {
             const isActive = item.path === pathName;
 
@@ -32,7 +32,7 @@ export const Navbar = () => {
                 onMouseOver={() => setHoveredPath(item.path)}
                 onMouseLeave={() => setHoveredPath(pathName)}
               >
-                <span className={cn('font-jetbrain  text-2xl', `${item.path === hoveredPath ? "text-white" : "text-foreground"}`)}>{item.name}</span>
+                <span className={cn('font-jetbrain  text-xl', `${item.path === hoveredPath ? "text-white" : "text-foreground"}`)}>{item.name}</span>
                 {item.path === hoveredPath && (
                   <motion.div
                     className="absolute bottom-0 left-0 h-full bg-[#CBA6F7]/70 rounded-full -z-10"

@@ -3,8 +3,10 @@ import { SectionWrapper } from "./section-wrapper"
 import { IntroCont } from "./intro-cont"
 import myImage from '../assests/images/image.jpg'
 import Image from "next/image"
+import Link from "next/link"
 import  { DiscordPresence } from "./discord-presence"
 import { Tip } from "./ui/tip"
+import { CardContainer , CardItem } from "./3d-card"
 export const Introduction = () => {
   return (
     <SectionWrapper>
@@ -12,13 +14,25 @@ export const Introduction = () => {
       <div className="flex w-full justify-between items-center mb-12 md:mb-24">
         <IntroCont name="Vineet" des={["Freelancer.", "Full Stack Wizard."]} />
         <div className="relative cursor-pointer animate-float hidden lg:block mr-8">
-          <Image
-            src={myImage}
-            alt="Picture of the author"
-            width={400}
-            height={400}
-            className="rounded-[3rem] z-[10] relative shadow-md shadow-black"
-          />
+
+        <CardContainer className=" cursor-pointer">
+        <Link href="" target="_blank">
+          <div className="">
+            <CardItem>
+              <Image
+                src={myImage}
+                alt={'platform'}
+                width={400}
+                height={400}
+                className="rounded-[3rem]"
+              />
+            </CardItem>
+          </div>
+        </Link>
+      </CardContainer>
+
+
+
          
         </div>
       </div>
