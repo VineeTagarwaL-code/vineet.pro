@@ -54,15 +54,15 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
     const {toast} = useToast()
 
     return (
-        <div className="max-w-[400px]">
-            <h1 className="text-sky-200/95 text-8xl font-bold font-grotesk ">{name}</h1>
-            <div className="flex flex-col gap-4 mt-5 px-3 ">
+        <div className="w-full md:max-w-[400px]">
+            <h1 className="text-sky-200/95 text-3xl md:text-8xl font-bold font-grotesk ">{name}</h1>
+            <div className="flex flex-col gap-4 mt-5 md:px-3 ">
 
 
                 {des.map((line, index) => {
                     return (
                         <React.Fragment key={index}>
-                            <h3 className="font-jetbrain text-2xl">{line}</h3>
+                            <h3 className="font-jetbrain text-xl md:text-2xl">{line}</h3>
 
                         </React.Fragment>
                     )
@@ -70,9 +70,9 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
 
 
                 )}
-                <h3 className="font-jetbrain text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-sky-200">code</span>.</h3>
+                <h3 className="font-jetbrain text-xl md:text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-sky-200">code</span>.</h3>
             </div>
-            <div className="flex gap-2  mt-4">
+            <div className="flex gap-5 md:gap-2  mt-6 md:mt-4 mb-6 md:mb-0">
                 {
                     icons.map((icon, index) => {
                         return (
@@ -120,7 +120,7 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
                     })
                 }
             </div>
-            <div className=" border-solid border-[1px] border-gray-200/20 bg-stone-800/20 max-w-full relative flex items-center justify-start h-[70px] rounded-2xl gap-8 mt-4 mx-3">
+            <div className=" w-full border-solid border-[1px] border-gray-200/20 bg-stone-800/20 max-w-full relative flex items-center justify-start h-[70px] rounded-2xl gap-8 mt-4 md:mx-3">
                 <div className="w-[10%] h-full bg-cyan-500 rounded-tl-2xl rounded-bl-2xl " />
              
                 <h4 className="text-2xl text-cyan-300 ">npx vineetdev</h4>

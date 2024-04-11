@@ -11,6 +11,7 @@ import monkey from '../assests/images/depositphotos_551580522-stock-illustration
 import image from '../assests/images/image.jpg'
 import Link from "next/link";
 import { act } from "react-dom/test-utils";
+import { cn } from "@/lib/utils";
 export const DiscordPresence = () => {
   const [activity, setActivity] = useState(`@${user.username}`);
   const [username, setUserName] = useState(user.username)
@@ -142,38 +143,36 @@ export const DiscordPresence = () => {
   }, []);
 
   return (
-    <div className="px-4">
+    <div className="md:px-4">
       {
-        isSpotify ? <div className="flex justify-start items-center gap-4">
-          <div className="relative">
+        isSpotify ? <div className="flex justify-start items-center gap-8 w-full ">
+          <div className="relative mt-1  min-w-[100px] h-[100px] md:w-[200px] md:h-[160px]">
             <Image
               src={activityImage}
               alt="Activity Image"
-              width={150}
-              height={150}
-              className="rounded-3xl z-[10] relative shadow-md"
+fill
+className={cn("rounded-full relative select-none", {
+  "animate-[spin_40s_linear_infinite] rounded-full": isSpotify,
+})}
+style={{
+  transition: "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+}}
             />
 
-            <Image
-              src={spotify}
-              alt="Spotify"
-              width={30}
-              height={30}
-              className="rounded-full shadow-2xl shadow-green-400 z-[10]   absolute right-0 bottom-[-10px]"
-            />
+            
           </div>
-          <div className="flex gap-2 flex-col justify-start items-start">
-            <h4 className="font-grotesk text-3xl cursor-pointer text-[#ffbe6f]"><Link href={songLink}>{activity.length > 15 ? `${activity.slice(0, 15)}...` : activity}</Link></h4>
-            {details && <h4 className="font-grotesk text-xl text-foreground">{
+          <div className="flex gap-2 flex-col justify-start items-start w-full">
+            <h4 className="font-grotesk text-lg md:text-3xl cursor-pointer text-[#ffbe6f]"><Link href={songLink}>{activity.length > 15 ? `${activity.slice(0, 15)}...` : activity}</Link></h4>
+            {details && <h4 className="font-grotesk text-lg md:text-xl text-foreground">{
               details.length > 20 ? `${details.slice(0, 20)}...` : details
             }</h4>}
             <div className="flex justify-center items-center gap-3 flex-row-reverse">
-              <Progress value={progress} className="w-[200px] h-[3px] text-red-500" />
+              <Progress value={progress} className=" w-[100px] md:w-[200px] h-[3px] text-red-500" />
               <p className="text-white font-jetbrain">{elapsed}</p>
             </div>
             <div className="flex gap-2">
-              <p className="text-[#ffbe6f] font-jetbrain text-xl">@{username} •</p>
-              <p className="text-cyan-300 font-grotesk text-xl">{state}</p>
+              <p className="text-[#ffbe6f] font-jetbrain text-sm md:text-xl">@{username} •</p>
+              <p className="text-cyan-300 font-grotesk text-sm md:text-xl">{state}</p>
 
             </div>
           </div>
