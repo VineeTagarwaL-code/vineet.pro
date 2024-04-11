@@ -32,7 +32,7 @@ export default function Home() {
           stiffness: 100 // Adjust stiffness for smoother motion
         }}
          whileHover={{ scale: 0.9 }} // Scale on hove
-        className="absolute w-4 h-4 border-[2px] border-solid border-gray-200/40 p-3 rounded-full pointer-events-none z-[100000]"
+        className="absolute w-4 h-4 border-[2px] border-solid border-gray-200/40 p-3 rounded-full pointer-events-none z-[100000] hidden lg:block"
         style={{ top: mousePosition.y-10, left: mousePosition.x-15 }}
       />
     </main>
