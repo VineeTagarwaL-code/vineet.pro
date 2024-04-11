@@ -54,21 +54,16 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
     const {toast} = useToast()
 
     return (
-        <div className="w-full md:max-w-[400px]">
-            <h1 className="text-sky-200/95 text-3xl md:text-8xl font-bold font-grotesk ">{name}</h1>
+        <div className="">
+            <h1 className="text-sky-200/95 text-3xl md:text-8xl font-bold font-grotesk before:content-['///'] before:h-[300px] before:text-[175px] before:text-gray-500/50 before:font-[700] before:-z-10  before:select-none before:translate-x-[-100%] before:translate-y-[-20%] webkit_text_stroke before:opacity-[0.25] before:tracking-[-.1em] before:absolute text-[65px] md:text-[96px] text-text_primary relative">{name}</h1>
             <div className="flex flex-col gap-4 mt-5 md:px-3 ">
-
-
                 {des.map((line, index) => {
                     return (
                         <React.Fragment key={index}>
                             <h3 className="font-jetbrain text-xl md:text-2xl">{line}</h3>
-
-                        </React.Fragment>
+                       </React.Fragment>
                     )
                 }
-
-
                 )}
                 <h3 className="font-jetbrain text-xl md:text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-sky-200">code</span>.</h3>
             </div>
