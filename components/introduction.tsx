@@ -3,11 +3,12 @@ import { IntroCont } from "./intro-cont"
 import myImage from '../assests/images/image.jpg'
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { DiscordPresence } from "./discord-presence"
+import  { DiscordPresence } from "./discord-presence"
 export const Introduction = () => {
   return (
     <SectionWrapper>
-      <div className="flex w-full justify-between items-center">
+      <div className="flex flex-col ">
+      <div className="flex w-full justify-between items-center mb-24">
         <IntroCont name="Vineet" des={["Freelancer.", "Full Stack Wizard."]} />
         <div className="relative cursor-pointer animate-float">
 
@@ -22,6 +23,8 @@ export const Introduction = () => {
         </div>
       </div>
       <DiscordPresence/>
+      </div>
+      
     </SectionWrapper>
   )
 }

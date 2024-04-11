@@ -1,6 +1,6 @@
 import { NextApiRequest , NextApiResponse } from "next";
 import { NextResponse } from "next/server";
-export async function GET(req:NextApiRequest, res:NextApiResponse){
+export async function handler(req:NextApiRequest, res:NextApiResponse){
  try{
    const response = await fetch('https://api.lanyard.rest/v1/users/1018532712455352330',
     {
