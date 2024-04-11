@@ -65,7 +65,7 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
                     )
                 }
                 )}
-                <h3 className="font-jetbrain text-xl md:text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-sky-200">code</span>.</h3>
+                <h3 className="font-jetbrain text-xl md:text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-green-200">code</span>.</h3>
             </div>
             <div className="flex gap-5 md:gap-8 pl-3  mt-6 md:mt-8 mb-6 md:mb-6">
                 {
@@ -118,7 +118,7 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
             <div className=" w-full border-solid border-[1px] border-gray-200/20 bg-stone-800/20 max-w-full relative flex items-center justify-start h-[70px] rounded-2xl gap-8 mt-4 md:mx-3">
                 <div className="w-[10%] h-full bg-cyan-500 rounded-tl-2xl rounded-bl-2xl " />
              
-                <h4 className="text-2xl text-cyan-300 ">npx vineetdev</h4>
+                <h4 className="text-2xl text-cyan-300 font-jetbrain">npx vineetdev</h4>
                 <Clipboard className="cursor-pointer text-cyan-300 p-2 w-fit h-fit absolute right-4 rounded-xl border-solid border-[1px]  border-gray-200/20" size={20} onClick={()=>{
                     navigator.clipboard.writeText("npx vineetdev")
                     toast({
