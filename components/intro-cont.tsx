@@ -72,7 +72,7 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
                 )}
                 <h3 className="font-jetbrain text-xl md:text-2xl">Converts <span className="text-green-200">air</span> into <span className="text-sky-200">code</span>.</h3>
             </div>
-            <div className="flex gap-5 md:gap-2  mt-6 md:mt-4 mb-6 md:mb-0">
+            <div className="flex gap-5 md:gap-8 pl-3  mt-6 md:mt-8 mb-6 md:mb-6">
                 {
                     icons.map((icon, index) => {
                         return (

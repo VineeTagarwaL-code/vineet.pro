@@ -143,23 +143,23 @@ export const DiscordPresence = () => {
   }, []);
 
   return (
-    <div className="md:px-4">
+    <div className="md:px-4 w-full">
       {
         isSpotify ? <div className="flex justify-start items-center gap-8 w-full ">
-          <div className="relative mt-1  min-w-[100px] h-[100px] md:w-[200px] md:h-[160px]">
+          <div className="relative mt-1  min-w-[100px] h-[100px] md:w-[200px] md:h-[130px]">
             <Image
               src={activityImage}
               alt="Activity Image"
-fill
-className={cn("rounded-full relative select-none", {
-  "animate-[spin_40s_linear_infinite] rounded-full": isSpotify,
-})}
-style={{
-  transition: "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-}}
+              fill
+              className={cn("rounded-full relative select-none", {
+                "animate-[spin_40s_linear_infinite] rounded-full": isSpotify,
+              })}
+              style={{
+                transition: "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+              }}
             />
 
-            
+
           </div>
           <div className="flex gap-2 flex-col justify-start items-start w-full">
             <h4 className="font-grotesk text-lg md:text-3xl cursor-pointer text-[#ffbe6f]"><Link href={songLink}>{activity.length > 15 ? `${activity.slice(0, 15)}...` : activity}</Link></h4>
@@ -179,63 +179,53 @@ style={{
         </div> : isActivity ? <div className="flex justify-start items-center gap-4">
 
 
-        <div className="relative">
+          <div className="relative mt-1  min-w-[100px] h-[100px] md:w-[130px] md:h-[130px]">
             <Image
               src={code}
               alt="Activity Image"
-              width={150}
-              height={150}
+              fill
               className="rounded-3xl z-[10] relative shadow-md bg-black"
             />
 
-            <Image
-              src={vs}
-              alt="Spotify"
-              width={30}
-              height={30}
-              className="rounded-full shadow-2xl shadow-green-400 z-[10]   absolute right-0 bottom-[-10px]"
-            />
+
           </div>
           <div className="flex gap-2 flex-col justify-start items-start">
-            <h4 className="font-grotesk text-3xl cursor-pointer text-[#ffbe6f]">{activity}</h4>
-            {details && <h4 className="font-jetbrain text-xl text-foreground">{
+            <h4 className="font-grotesk text-lg md:text-3xl cursor-pointer text-[#ffbe6f]">{activity}</h4>
+            {details && <h4 className="font-jetbrain text-lg md:text-xl text-foreground">{
               details
             }</h4>}
 
-            <p className="font-grotesk text-xl text-gray-200">{workingFile?.length> 20 ? `${workingFile?.slice(0,30)}....` : workingFile}</p>   
+            <p className="font-grotesk text-sm md:text-xl text-gray-200">{workingFile?.length > 20 ? `${workingFile?.slice(0, 30)}....` : workingFile}</p>
             <div className="flex gap-2 flex-col">
-              <p className="text-gray-400 font-jetbrain text-xl">ELAPSED: <span className="text-green-400">{elapsed}</span></p>
+              <p className="text-gray-400 font-jetbrain text-sm md:text-xl">ELAPSED: <span className="text-green-400">{elapsed}</span></p>
               <div className="flex gap-3 ">
-              <p className="text-[#ffbe6f] font-jetbrain text-xl">@{username} • </p>
-              <p className="text-cyan-300 font-grotesk text-xl">{' '}{state}</p>
-                </div>
+                <p className="text-[#ffbe6f] font-jetbrain text-sm md:text-xl">@{username} • </p>
+                <p className="text-cyan-300 font-grotesk text-sm md:text-xl">{' '}{state}</p>
+              </div>
 
 
 
             </div>
           </div>
-        </div> : <div className="flex justify-start items-center gap-4">
-          <div className="relative">
+        </div> : <div className="flex justify-start items-center gap-4 w-full">
+        <div className="relative mt-1  min-w-[100px] h-[100px] md:w-[130px] md:h-[130px]">
             <Image
               src={monkey}
               alt="Activity Image"
-              width={200}
-              height={200}
+              fill
               className="rounded-3xl z-[10] relative shadow-md"
             />
-
-
           </div>
           <div className="flex gap-2 flex-col justify-start items-start">
-            <h4 className="font-grotesk text-3xl cursor-pointer text-[#ffbe6f]"><Link href={songLink}>{activity.length > 15 ? `${activity.slice(0, 15)}...` : activity}</Link></h4>
-            {details && <h4 className="font-grotesk text-xl text-foreground">{
+            <h4 className="font-grotesk text-xl md:text-3xl cursor-pointer text-[#ffbe6f]"><Link href={songLink}>{activity.length > 15 ? `${activity.slice(0, 15)}...` : activity}</Link></h4>
+            {details && <h4 className="font-grotesk text-lg md:text-xl text-foreground">{
               details.length > 20 ? `${details.slice(0, 20)}...` : details
             }</h4>}
 
-            <p className="text-gray-400 text-xl font-jetbrain">Workspace • Home</p>
+            <p className="text-gray-400 text-sm md:text-xl font-jetbrain">Workspace • Home</p>
             <div className="flex gap-2">
 
-              <p className="text-cyan-300 font-grotesk text-xl">{state}</p>
+              <p className="text-cyan-300 font-grotesk text-sm md:text-xl">{state}</p>
 
             </div>
           </div>

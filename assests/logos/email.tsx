@@ -1,3 +1,4 @@
+"use client"
 export const Email = ()=>{
     return(
         <div className="cursor-pointer   transition-all hover:bg-stone-800/90 p-1 md:p-4 rounded-full">

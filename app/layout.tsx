@@ -3,6 +3,7 @@ import { Inter , Space_Grotesk , JetBrains_Mono} from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] ,
 variable: "--space-grotesk"});
@@ -22,6 +23,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
+  
   return (
     <html lang="en">
       <body className={cn(inter.className , spaceGrotesk.variable , JetBrainsMono.variable)}>
