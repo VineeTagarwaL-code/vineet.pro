@@ -30,10 +30,6 @@ export const Introduction = () => {
           </div>
         </Link>
       </CardContainer>
-
-
-
-         
         </div>
       </div>
       <div className="flex justify-between items-center w-full flex-col md:flex-row gap-8">
