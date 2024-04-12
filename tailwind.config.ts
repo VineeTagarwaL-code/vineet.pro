@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,17 +19,16 @@ const config = {
       },
     },
     extend: {
-   
       fontFamily: {
         grotesk: ["var(--space-grotesk)"],
-        jetbrain:['var(--jetbrains-mono)'],
+        jetbrain: ["var(--jetbrains-mono)"],
       },
 
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         rosewater: "hsl(var(--rosewater))",
-        text:'hsl(var(--main-text))',
+        text: "hsl(var(--main-text))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -70,7 +69,7 @@ const config = {
       keyframes: {
         smooth: {
           "0%": { transform: "translateY(-5px)" },
-      
+
           "50%": { transform: "translateY(5px)" },
 
           "100%": { transform: "translateY(-5px)" },
@@ -85,15 +84,14 @@ const config = {
         },
       },
       animation: {
-        'spin-slow': 'spin 5s linear infinite',
+        "spin-slow": "spin 5s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "smooth 3s ease-in-out infinite",
-
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

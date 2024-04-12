@@ -1,17 +1,16 @@
-const Navlinks =[
-    {
-        path: "/",
-        name: "/",
-      },
-      {
-        path: "/about",
-        name: "about",
-      },
-      {
-        path: "/work",
-        name: "work",
-      },
-
-]
+const Navlinks = [
+  {
+    path: "/",
+    name: "/",
+  },
+  {
+    path: "/about",
+    name: "about",
+  },
+  {
+    path: "/work",
+    name: "work",
+  },
+];
 
 export default Navlinks;

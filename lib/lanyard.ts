@@ -1,18 +1,16 @@
-import { useEffect, useState } from 'react';
-import { user } from './user';
+import { useEffect, useState } from "react";
+import { user } from "./user";
 
 export const useStatus = () => {
   const [pulse, setPulse] = useState(0);
   const [status, setStatus] = useState<any>({});
-  let lanyard: WebSocket ;
+  let lanyard: WebSocket;
   useEffect(() => {
-
-
     async function connect() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       lanyard = new WebSocket(`wss://api.lanyard.rest/socket`);
       lanyard.onopen = () => {
-        console.log('Connected to Lanyard');
+        console.log("Connected to Lanyard");
       };
 
       lanyard.onmessage = (event) => {
@@ -24,8 +22,8 @@ export const useStatus = () => {
           lanyard.send(
             JSON.stringify({
               op: 2,
-              d: { subscribe_to_id: user.id }
-            })
+              d: { subscribe_to_id: user.id },
+            }),
           );
         }
 
@@ -54,6 +52,6 @@ export const useStatus = () => {
     };
   }, [pulse]);
 
-  console.log(status, 'status');
+  console.log(status, "status");
   return status;
 };

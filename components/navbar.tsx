@@ -1,19 +1,18 @@
-"use client"
-import Navlinks from "@/constants/navlink"
-import { usePathname } from "next/navigation"
-import Link from "next/link"
-import { useState } from "react"
+"use client";
+import Navlinks from "@/constants/navlink";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 export const Navbar = () => {
-
-  let pathName = usePathname() || "/"
+  let pathName = usePathname() || "/";
 
   if (pathName.includes("/writing/")) {
     pathName = "/writing";
   }
 
-  const [hoveredPath, setHoveredPath] = useState<string | null>(pathName)
+  const [hoveredPath, setHoveredPath] = useState<string | null>(pathName);
 
   return (
     <div className="md:flex justify-center items-center hidden ">
@@ -25,14 +24,22 @@ export const Navbar = () => {
             return (
               <Link
                 key={item.path}
-                className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${isActive ? "text-zinc-100" : "text-zinc-400"
-                  }`}
+                className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${
+                  isActive ? "text-zinc-100" : "text-zinc-400"
+                }`}
                 data-active={isActive}
                 href={item.path}
                 onMouseOver={() => setHoveredPath(item.path)}
                 onMouseLeave={() => setHoveredPath(pathName)}
               >
-                <span className={cn('font-jetbrain  text-xl', `${item.path === hoveredPath ? "text-white" : "text-foreground"}`)}>{item.name}</span>
+                <span
+                  className={cn(
+                    "font-jetbrain  text-xl",
+                    `${item.path === hoveredPath ? "text-white" : "text-foreground"}`,
+                  )}
+                >
+                  {item.name}
+                </span>
                 {item.path === hoveredPath && (
                   <motion.div
                     className="absolute bottom-0 left-0 h-full bg-[#CBA6F7]/70 rounded-full -z-10"
@@ -54,10 +61,7 @@ export const Navbar = () => {
             );
           })}
         </nav>
-
       </div>
     </div>
-
   );
-
-}
+};
