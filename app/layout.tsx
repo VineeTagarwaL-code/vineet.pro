@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["500"],   
+  weight: ["500"],
   variable: "--space-grotesk",
 });
 const JetBrainsMono = JetBrains_Mono({

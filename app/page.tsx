@@ -26,7 +26,7 @@ export default function Home() {
       <Navbar />
       <ResumeButton />
       <Introduction />
-      <Skills/>
+      <Skills />
       {/* <motion.div
         transition={{
           type: "spring",

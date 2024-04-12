@@ -6,15 +6,15 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import {cn} from '@/lib/utils'
+import { cn } from "@/lib/utils";
 import { useState } from "react";
 type tipprops = {
   tip: string;
   name?: string;
   children?: React.ReactNode;
-  className?:string;
+  className?: string;
 };
-export const Tip = ({ tip, name , children ,className }: tipprops) => {
+export const Tip = ({ tip, name, children, className }: tipprops) => {
   const [hovered, setHovered] = useState(false);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0);
@@ -28,7 +28,7 @@ export const Tip = ({ tip, name , children ,className }: tipprops) => {
   );
   return (
     <div
-      className={cn("relative group w-fit inline-block" , className)}
+      className={cn("relative group w-fit inline-block", className)}
       onMouseEnter={() => {
         setHovered(true);
       }}
@@ -68,10 +68,7 @@ export const Tip = ({ tip, name , children ,className }: tipprops) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {
-          children ? children : name
-        }
-
+        {children ? children : name}
       </motion.div>
     </div>
   );
