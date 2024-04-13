@@ -42,7 +42,6 @@ const languages: skillType[] = [
     name: "java",
     logo: <Java />,
   },
-
 ];
 const cloud: skillType[] = [
   {
@@ -61,7 +60,6 @@ const cloud: skillType[] = [
     name: "Docker",
     logo: <Docker />,
   },
-
 ];
 const frameworks: skillType[] = [
   {
@@ -177,15 +175,12 @@ export const Skills = () => {
             })}
           </div>
           <div className="flex-wrap flex gap-6 justify-center items-center">
-          
-         
-                <SkillCard
-                  key={"more"}
-                  skill={"More"}
-                  logo={"&"}
-                  contClass="shadow-[6px_6px_0px_1px_#dc8070] max-w-[150px] min-w-[150px] "
-                />
-
+            <SkillCard
+              key={"more"}
+              skill={"More"}
+              logo={"&"}
+              contClass="shadow-[6px_6px_0px_1px_#dc8070] max-w-[150px] min-w-[150px] "
+            />
           </div>
         </div>
       </div>

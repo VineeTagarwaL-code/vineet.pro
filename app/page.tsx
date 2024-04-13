@@ -27,7 +27,7 @@ export default function Home() {
       <ResumeButton />
       <Introduction />
       <Skills />
-      <Experience/>
+      <Experience />
       {/* <motion.div
         transition={{
           type: "spring",
