@@ -99,3 +99,14 @@ export interface Repo {
   stars: string;
   forks: any;
 }
+
+
+export interface Experience {
+  title: string;
+  tip: string;
+  company: string;
+  date: string;
+  location: string;
+  description: string[];
+  lang: string[];
+}

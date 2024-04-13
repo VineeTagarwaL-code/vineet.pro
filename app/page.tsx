@@ -3,8 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { ResumeButton } from "@/components/resume-button";
 import { Introduction } from "@/components/introduction";
 import { Skills } from "@/components/skills";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Experience } from "@/components/experience";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -27,6 +27,7 @@ export default function Home() {
       <ResumeButton />
       <Introduction />
       <Skills />
+      <Experience/>
       {/* <motion.div
         transition={{
           type: "spring",

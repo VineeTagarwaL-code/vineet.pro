@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0", 
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -31,9 +31,9 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.77",
+    "@types/react-dom": "^18.2.25",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
