@@ -16,7 +16,7 @@ export const Introduction = () => {
             name="Vineet"
             des={["Freelancer.", "Full Stack Wizard."]}
           />
-          <div className="relative cursor-pointer animate-float hidden lg:block mr-8">
+          <div className="relative cursor-pointer animate-float hidden md:block mr-8">
             <CardContainer className=" cursor-pointer">
               <Link href="" target="_blank">
                 <div className="">

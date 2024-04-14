@@ -8,10 +8,10 @@ import { motion, inView } from "framer-motion";
 export const Work = (work: experienceType) => {
   return (
     <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
+      initial={{ scale: 0.9, opacity: 0 }}
       whileTap={{ scale: 0.9 }}
       whileInView={{ scale: 1.02, opacity: 1 }}
-      className="bg-stone-800/20 border-t-[1px] border-foreground border-solid border-l-[1px] px-8 py-4 select-none cursor-pointer rounded-xl shadow-[6px_6px_0px_1px_#8646d7]  md:w-[800px]  w-fit flex  flex-col mb-[100px]"
+      className="bg-stone-800/20 border-t-[1px] border-foreground border-solid border-l-[1px] px-8 py-4 select-none cursor-pointer rounded-xl  shadow-[2px_6px_0px_1px_#8646d7] md:shadow-[6px_6px_0px_1px_#8646d7]  md:w-[800px]  w-fit flex  flex-col mb-[100px]"
     >
       <div className="flex justify-between items-center gap-3 mb-10 w-full">
         <div className="flex justify-start items-center gap-3">
@@ -26,16 +26,23 @@ export const Work = (work: experienceType) => {
             vineethere
           </h4>
         </div>
-        <div className="flex justify-start items-end sm:items-center gap-3 flex-col sm:flex-row ">
-          <h4 className="font-jetbrain text-sm md:text-base mb-1 text-cyan-300">
+        <div className="flex justify-start items-end sm:items-center gap-1 md:gap-3 flex-col sm:flex-row ">
+          <h4 className="font-jetbrain text-sm md:text-base  text-cyan-300">
             {work.location}
           </h4>
           <span className="sm:flex justify-center items-center hidden ">
             {" "}
             •
           </span>
-          <h4 className="font-jetbrain text-sm md:text-base mb-1 text-green-300">
-            {work.date}
+          <h4 className="font-jetbrain text-base md:text-base mb-1 text-green-300">
+            {work.startDate}
+          </h4>
+          <span className="hidden md:inline-block justify-center items-center  ">
+            {" "}
+            -
+          </span>
+          <h4 className="font-jetbrain hidden md:inline-block md:text-base mb-1 text-green-300">
+            {work.endDate}
           </h4>
         </div>
       </div>
@@ -70,7 +77,7 @@ export const Work = (work: experienceType) => {
                     key={index}
                     className=" text-sm font-jetbrain  rounded-md text-[#34c07c]"
                   >
-                    {lang},
+                    {lang}{index == work.lang.length-1 ?'':',' }
                   </span>
                 </Tip>
               );

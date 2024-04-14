@@ -8,7 +8,8 @@ const experience: experienceType[] = [
     title: "Full Stack Engineer Intern",
     company: "useForward",
     tip: "Work culture was awesome here",
-    date: "March 2024 - Present",
+    startDate:"March 2024",
+    endDate:"April 2024",
     location: "Remote, USA",
     description: [
       `Developed a prototype to integrate real-time Discord announcements into the extension for enhanced functionality,
@@ -30,9 +31,10 @@ const experience: experienceType[] = [
   },
   {
     title: "Full Stack Engineer ",
-    tip: "Client loved my work",
+    tip: "Clients loved my work",
     company: "Freelancer",
-    date: "Jan 2023 - Present",
+    startDate:"Jan 2023",
+    endDate:"Present",
     location: "Remote",
     description: [
       "Improved the performance and visuals of Next.js-based full-Stack website that boosted user retention by 40%",
@@ -56,7 +58,8 @@ const experience: experienceType[] = [
     title: "Full Stack Engineer",
     tip: "I'm a fast learner",
     company: "Open Source",
-    date: "Nov 2023 - Present",
+    startDate:"Nov 2023",
+    endDate:"Present",
     location: "Remote",
     description: [
       "Awarded $50 bounty for enhancing a video player for an ed-tech website, benefiting over 10k students.(",
@@ -80,7 +83,8 @@ const experience: experienceType[] = [
     title: "Full Stack Engineer Intern",
     tip: "First Internship",
     company: "Sparks Foundation",
-    date: "Oct 2023 - Nov 2023",
+    startDate:"Oct 2023",
+    endDate:"Nov 2023",
     location: "Remote, Singapore",
     description: [
       "Developed a full stack application using Next.js, Express.js, and MongoDB.",
@@ -95,6 +99,9 @@ export const Experience = () => {
   return (
     <SectionWrapper>
       <div className="mt-8 flex justify-center items-center flex-col">
+      <div className="text-sky-200/95 text-3xl md:text-8xl font-bold font-grotesk md:before:content-['<>'] before:h-[300px] before:text-[250px] before:text-gray-500/50 before:font-[700] before:-z-10  before:select-none before:translate-x-[-280%] before:translate-y-[-10%] webkit_text_stroke before:opacity-[0.25] before:tracking-[-.1em] before:absolute text-[65px] md:text-[96px] text-text_primary relative"/>
+      <div className="text-sky-200/95 text-3xl md:text-8xl font-bold font-grotesk md:before:content-['&&'] before:h-[300px] before:text-[250px] before:text-gray-500/50 before:font-[700] before:-z-10  before:select-none before:translate-x-[180%] before:translate-y-[-10%] webkit_text_stroke before:opacity-[0.25] before:tracking-[-.1em] before:absolute text-[65px] md:text-[96px] text-text_primary absolute"/>
+
         <Tip tip="there's more trust me" className="self-center">
           <h1 className="font-jetbrain text-center text-5xl mb-16">
             <span className=" text-green-300">code</span>

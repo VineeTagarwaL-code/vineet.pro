@@ -4,12 +4,12 @@ const Navlinks = [
     name: "/",
   },
   {
-    path: "/about",
-    name: "about",
-  },
-  {
     path: "/work",
     name: "work",
+  },
+  {
+    path: "/projects",
+    name: "projects",
   },
 ];
 

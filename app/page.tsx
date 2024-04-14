@@ -5,7 +5,7 @@ import { Introduction } from "@/components/introduction";
 import { Skills } from "@/components/skills";
 import { useEffect, useState } from "react";
 import { Experience } from "@/components/experience";
-
+import { Project } from "@/components/projects";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -22,12 +22,13 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen relative">
+    <main className="min-h-screen relative scroll-smooth">
       <Navbar />
       <ResumeButton />
       <Introduction />
       <Skills />
       <Experience />
+      <Project/>
       {/* <motion.div
         transition={{
           type: "spring",
