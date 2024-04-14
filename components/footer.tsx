@@ -1,11 +1,11 @@
-"use client"
+
 import { SectionWrapper } from "./section-wrapper";
 import { Github } from "@/assests/logos/github";
 import { Email } from "@/assests/logos/email";
 import { Discord } from "@/assests/logos/discord";
 import { Tip } from "./ui/tip";
 import Link from "next/link";
-import { useState } from "react";
+
 const FooterLink = [
   {
     icon: <Email />,

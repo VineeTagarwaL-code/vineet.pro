@@ -19,18 +19,21 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.27",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.367.0",
+    "mouse-follower": "^1.1.2",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll": "^1.9.0",
     "react-use-lanyard": "^0.3.1",
+    "sass": "^1.75.0",
     "sharp": "^0.33.3",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "url-loader": "^4.1.1",
-    "use-sound": "^4.0.1"
+    "use-sound": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

@@ -1,6 +1,5 @@
 "use client";
 import Navlinks from "@/constants/navlink";
-import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
