@@ -27,21 +27,21 @@ export const Work = (work: experienceType) => {
           </h4>
         </div>
         <div className="flex justify-start items-end sm:items-center gap-1 md:gap-3 flex-col sm:flex-row ">
-          <h4 className="font-jetbrain text-sm md:text-base  text-cyan-300">
+          <h4 className="font-jetbrain text-sm md:text-base  text-cyan-300 text-right ">
             {work.location}
           </h4>
           <span className="sm:flex justify-center items-center hidden ">
             {" "}
             •
           </span>
-          <h4 className="font-jetbrain text-base md:text-base mb-1 text-green-300">
+          <h4 className="font-jetbrain text-base md:text-base  text-green-300">
             {work.startDate}
           </h4>
           <span className="hidden md:inline-block justify-center items-center  ">
             {" "}
             -
           </span>
-          <h4 className="font-jetbrain hidden md:inline-block md:text-base mb-1 text-green-300">
+          <h4 className="font-jetbrain hidden md:inline-block md:text-base  text-green-300">
             {work.endDate}
           </h4>
         </div>

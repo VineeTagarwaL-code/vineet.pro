@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
+import Head from "next/head";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
@@ -27,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+      <link rel="icon" href="/image.ico"  sizes="32x32" />
+      </Head>
       <body
         className={cn(
           inter.className,

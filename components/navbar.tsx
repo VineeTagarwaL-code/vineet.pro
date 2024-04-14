@@ -1,5 +1,6 @@
 "use client";
 import Navlinks from "@/constants/navlink";
+import {useEffect} from   "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
@@ -7,16 +8,16 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 export const Navbar = () => {
   let pathName = usePathname() || "/";
-
   if (pathName.includes("/writing/")) {
     pathName = "/writing";
   }
 
-  const [hoveredPath, setHoveredPath] = useState<string | null>(pathName);
 
+  const [hoveredPath, setHoveredPath] = useState<string | null>(pathName);
+  
   return (
     <div className="md:flex justify-center items-center hidden ">
-      <div className=" rounded-full mb-12 z-[100]  backdrop-blur-md  px-16 py-6 mt-3 ">
+      <div className="rounded-full mb-12 z-[10000000]  backdrop-blur-md  px-16 py-6 mt-3 ">
         <nav className="flex gap-[100px] relative justify-start w-full z-[100]  rounded-lg">
           {Navlinks.map((item, index) => {
             const isActive = item.path === pathName;

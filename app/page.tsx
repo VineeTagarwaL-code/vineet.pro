@@ -6,6 +6,8 @@ import { Skills } from "@/components/skills";
 import { useEffect, useState } from "react";
 import { Experience } from "@/components/experience";
 import { Project } from "@/components/projects";
+import { Footer } from "@/components/footer";
+import { MobileNavbar } from "@/components/mobile-footer";
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -29,6 +31,8 @@ export default function Home() {
       <Skills />
       <Experience />
       <Project />
+      <Footer/>
+      <MobileNavbar/>
       {/* <motion.div
         transition={{
           type: "spring",

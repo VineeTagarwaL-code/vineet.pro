@@ -1,5 +1,7 @@
+"use client"
 import { Project } from "@/lib/types";
 import Image from "next/image";
+
 import myImage from "@/assests/images/image.jpg";
 import { Github } from "@/assests/logos/github";
 import { Link as LinkIcon } from "@/assests/logos/link";
@@ -11,9 +13,9 @@ export const ProjectCard = (project: Project) => {
   return (
     <motion.div
       whileHover={{ translateY: -2, scale: 1.02 }}
-      className=" h-[190px] md:h-[225px] cursor-pointer flex flex-col px-3 py-6 justify-between bg-stone-800/20 border-cyan-300/30 border-solid border-[1px] rounded-xl"
+      className=" h-[210px] md:h-[225px] cursor-pointer flex flex-col px-4 py-6 justify-between bg-stone-800/20 border-cyan-300/30 border-solid border-[1px] rounded-xl"
     >
-      <div className="flex justify-between items-center h-[10%] w-full ">
+      <div className="flex justify-between items-center h-[10%] w-full mb-2">
         <div className="flex justify-start items-center gap-3  ">
           <Image
             src={myImage}
@@ -32,21 +34,22 @@ export const ProjectCard = (project: Project) => {
               <LinkIcon />
             </Link>
           )}
+           {project?.onProgress && (
+            <Tip tip="working">
+              <LoaderCircle color="#ffbe6f" className="animate-[spin_2s_linear_infinite]" />
+            </Tip>
+          )}
           {project?.github && (
             <Link href={project.github}>
               <Github />
             </Link>
           )}
-          {project?.onProgress && (
-            <Tip tip="inProgess == true">
-              <LoaderCircle color="#ffbe6f" className="animate-spin" />
-            </Tip>
-          )}
+         
         </div>
       </div>
-      <div>
+      <div className="mb-2">
         <h1 className="text-xl md:text-2xl font-grotesk mb-2">
-          <Tip tip={"h"}>{project.title}</Tip>
+          <Tip tip={project?.tip || ""}>{project.title}</Tip>
         </h1>
         <h3 className="text-base md:text-xl font-grotesk ">
           {project.description}
