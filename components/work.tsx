@@ -77,7 +77,8 @@ export const Work = (work: experienceType) => {
                     key={index}
                     className=" text-sm font-jetbrain  rounded-md text-[#34c07c]"
                   >
-                    {lang}{index == work.lang.length-1 ?'':',' }
+                    {lang}
+                    {index == work.lang.length - 1 ? "" : ","}
                   </span>
                 </Tip>
               );

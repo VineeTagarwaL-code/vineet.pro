@@ -28,7 +28,7 @@ export default function Home() {
       <Introduction />
       <Skills />
       <Experience />
-      <Project/>
+      <Project />
       {/* <motion.div
         transition={{
           type: "spring",

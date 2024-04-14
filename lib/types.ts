@@ -105,19 +105,17 @@ export interface Experience {
   tip: string;
   company: string;
   startDate: string;
-  endDate:string;
+  endDate: string;
   location: string;
   description: string[];
   lang: string[];
 }
 
-
-export interface Project{
-  title:string,
-  description:string,
-  lang:string[],
-  link?:string,
-  github?:string
-  onProgress?:boolean
-  
+export interface Project {
+  title: string;
+  description: string;
+  lang: string[];
+  link?: string;
+  github?: string;
+  onProgress?: boolean;
 }
