@@ -11,7 +11,7 @@ import { CardContainer, CardItem } from "./3d-card";
 export const Introduction = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-col py-6 " id="top" >
+      <div className="flex flex-col py-6 " id="top">
         <div className="flex w-full justify-between items-center mb-12 md:mb-24">
           <IntroCont
             name="Vineet"
@@ -42,7 +42,7 @@ export const Introduction = () => {
             </p>
             <DiscordPresence />
           </div>
-          <div className="md:w-[50%]"  id="bio">
+          <div className="md:w-[50%]" id="bio">
             <p className="font-jetbrain mb-4 text-2xl text-sky-200/95 md:hidden">
               bio
             </p>

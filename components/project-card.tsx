@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Project } from "@/lib/types";
 import Image from "next/image";
 
@@ -34,9 +34,12 @@ export const ProjectCard = (project: Project) => {
               <LinkIcon />
             </Link>
           )}
-           {project?.onProgress && (
+          {project?.onProgress && (
             <Tip tip="working">
-              <LoaderCircle color="#ffbe6f" className="animate-[spin_2s_linear_infinite]" />
+              <LoaderCircle
+                color="#ffbe6f"
+                className="animate-[spin_2s_linear_infinite]"
+              />
             </Tip>
           )}
           {project?.github && (
@@ -44,7 +47,6 @@ export const ProjectCard = (project: Project) => {
               <Github />
             </Link>
           )}
-         
         </div>
       </div>
       <div className="mb-2">

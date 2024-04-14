@@ -31,8 +31,8 @@ export default function Home() {
       <Skills />
       <Experience />
       <Project />
-      <Footer/>
-      <MobileNavbar/>
+      <Footer />
+      <MobileNavbar />
       {/* <motion.div
         transition={{
           type: "spring",

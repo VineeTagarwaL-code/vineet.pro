@@ -1,6 +1,6 @@
 "use client";
 import Navlinks from "@/constants/navlink";
-import {useEffect} from   "react";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
@@ -12,9 +12,8 @@ export const Navbar = () => {
     pathName = "/writing";
   }
 
-
   const [hoveredPath, setHoveredPath] = useState<string | null>(pathName);
-  
+
   return (
     <div className="md:flex justify-center items-center hidden ">
       <div className="rounded-full mb-12 z-[10000000]  backdrop-blur-md  px-16 py-6 mt-3 ">

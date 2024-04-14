@@ -186,8 +186,11 @@ export const DiscordPresence = () => {
             </div>
             <div className="flex gap-2">
               <p className="text-[#ffbe6f] font-jetbrain text-sm md:text-xl">
-                @{username} •
+                @{username} 
               </p>
+              <span className="text-[#ffbe6f] font-jetbrain text-sm md:text-xl hidden sm:inline-block">
+              •
+              </span>
               <p className="text-cyan-300 font-grotesk text-sm md:text-xl">
                 {state}
               </p>

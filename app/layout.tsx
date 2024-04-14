@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-      <link rel="icon" href="/image.ico"  sizes="32x32" />
+        <link rel="icon" href="/image.ico" sizes="32x32" />
       </Head>
       <body
         className={cn(

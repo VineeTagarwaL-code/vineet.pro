@@ -3,7 +3,7 @@ import { Project } from "@/lib/types";
 const Projects: Project[] = [
   {
     title: "OrganLink",
-    tip:"made in punjab",
+    tip: "made in punjab",
     description:
       "When Life is at sake & time is a factor OrganLink comes for rescue",
     lang: ["Typescript", "NextJs", "WebSockets"],
@@ -12,7 +12,7 @@ const Projects: Project[] = [
   },
   {
     title: "DevTest",
-    tip:"made in rahukila",
+    tip: "made in rahukila",
     description: "What if google meet & Replit had a baby.",
     lang: ["NextJs", "Typescript", "LiveKit", "Judge0 API"],
 
@@ -20,7 +20,7 @@ const Projects: Project[] = [
   },
   {
     title: "SunoSathMe",
-    tip:"made in 127.0.0.1",
+    tip: "made in 127.0.0.1",
     description: "Jam with your freinds on the go",
     lang: ["NextJs", "WebSockets", "Spotify API", "Typescript"],
     onProgress: true,
@@ -29,7 +29,7 @@ const Projects: Project[] = [
   },
   {
     title: "Vineet.tech",
-    tip:"made in localhost",
+    tip: "made in localhost",
     description: "A portfolio handcrafter by me in 7hours",
     lang: ["NextJs", "WebSockets", "Shadcn", "Framer-motion", "Discord"],
 

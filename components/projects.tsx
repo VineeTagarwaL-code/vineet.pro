@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { SectionWrapper } from "./section-wrapper";
 import { Tip } from "./ui/tip";
 import Projects from "@/constants/project";
