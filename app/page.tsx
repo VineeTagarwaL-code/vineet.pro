@@ -8,7 +8,6 @@ import { Project } from "@/components/projects";
 import { Footer } from "@/components/footer";
 import { MobileNavbar } from "@/components/mobile-footer";
 export default function Home() {
-
   return (
     <main className="min-h-screen relative scroll-smooth select-none">
       <Navbar />
@@ -19,7 +18,6 @@ export default function Home() {
       <Project />
       <Footer />
       <MobileNavbar />
-
     </main>
   );
 }

@@ -46,7 +46,7 @@ export const Introduction = () => {
             <p className="font-jetbrain mb-4 text-2xl text-sky-200/95 md:hidden">
               bio
             </p>
-            <div className="font-grotesk  text-md md:text-xl md:ml-6 select-none flex-nowrap relative leading-[1.75rem] before:font-jetbrain after:font-jetbrain before:text-gray-500/50  after:text-gray-500/50 md:before:content-['vin'] before:h-[300px] before:text-[150px] before:font-[700] before:-z-10 before:select-none before:translate-x-[140%] before:translate-y-[1%] webkit_text_stroke before:opacity-[0.22] before:absolute md:after:content-['eet'] after:h-[300px] after:text-[150px] after:font-[600] after:-z-10 after:select-none after:translate-x-[130%] after:translate-y-[-15%] webkit_text_stroke_after after:opacity-[0.22] after:absolute ">
+            <div className="font-grotesk  text-md md:text-xl md:ml-6 select-none flex-nowrap relative leading-[1.75rem] before:font-jetbrain after:font-jetbrain before:text-gray-500/50  after:text-gray-500/50 lg:before:content-['vin'] before:h-[300px] before:text-[150px] before:font-[700] before:-z-10 before:select-none before:translate-x-[140%] before:translate-y-[1%] webkit_text_stroke before:opacity-[0.22] before:absolute lg:after:content-['eet'] after:h-[300px] after:text-[150px] after:font-[600] after:-z-10 after:select-none after:translate-x-[130%] after:translate-y-[-15%] webkit_text_stroke_after after:opacity-[0.22] after:absolute ">
               Hey, I{`'`}m Vineet I{`'`}m a{" "}
               <Tip name="20" tip="yes thats correct" /> year old full stack
               developer and freelancer based in India, I{`'`}ve been coding
