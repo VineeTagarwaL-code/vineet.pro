@@ -12,7 +12,7 @@ const Projects: Project[] = [
   },
   {
     title: "DevTest",
-    tip: "made in rahukila",
+    tip: "made in rourkela",
     description: "What if google meet & Replit had a baby.",
     lang: ["NextJs", "Typescript", "LiveKit", "Judge0 API"],
 

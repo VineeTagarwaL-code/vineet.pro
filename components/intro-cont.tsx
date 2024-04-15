@@ -47,7 +47,7 @@ const icons = [
     name: "Yup, that's me",
     icon: <Me />,
     handler: () => {
-      window.open("https://github.com/vineeTagarwaL-code");
+      window.open("https://vineet.tech");
     },
   },
 ];

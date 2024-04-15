@@ -37,7 +37,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center items-center">
           <p className="text-foreground font-grotesk text-xl">
-            Made with {"<"}3, Thank You!
+            Made with <Tip tip="i m sorry, ily">{"<"}3</Tip>, Thank You!
           </p>
         </div>
       </footer>
