@@ -105,7 +105,7 @@ const tools: skillType[] = [
 export const Skills = () => {
   return (
     <SectionWrapper>
-      <div className="mt-8 flex justify-center items-center flex-col">
+      <div className="mt-8 flex justify-center items-center flex-col py-8">
         <Tip tip="there's more trust me" className="self-center">
           <h1 className="font-jetbrain text-center text-5xl mb-16">
             <span className=" text-green-300">code</span>

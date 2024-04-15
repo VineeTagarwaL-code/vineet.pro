@@ -1,7 +1,7 @@
 "use client";
 import Navlinks from "@/constants/navlink";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -22,14 +22,18 @@ export const Navbar = () => {
 
             return (
               <Link
+              spy={true}
+              smooth={true}
+              duration={500}
+              to ={item.to}
                 key={item.path}
                 className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${
                   isActive ? "text-zinc-100" : "text-zinc-400"
                 }`}
                 data-active={isActive}
                 href={item.path}
-                onMouseOver={() => setHoveredPath(item.path)}
-                onMouseLeave={() => setHoveredPath(pathName)}
+                onMouseOver={() => setHoveredPath(item.to)}
+                onMouseLeave={() => setHoveredPath("top")}
               >
                 <span
                   className={cn(
@@ -39,7 +43,7 @@ export const Navbar = () => {
                 >
                   {item.name}
                 </span>
-                {item.path === hoveredPath && (
+                {item.to === hoveredPath && (
                   <motion.div
                     className="absolute bottom-0 left-0 h-full bg-[#CBA6F7]/70 rounded-full -z-10"
                     layoutId="navbar"

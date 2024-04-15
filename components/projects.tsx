@@ -6,7 +6,7 @@ import { ProjectCard } from "./project-card";
 export const Project = () => {
   return (
     <SectionWrapper>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col" id="projects">
         <Tip tip="Some of the works, I did" className="self-center">
           <h1 className="font-jetbrain text-center text-5xl mb-16">
             <span className=" text-green-300">code</span>
