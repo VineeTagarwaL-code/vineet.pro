@@ -52,7 +52,7 @@ export const Introduction = () => {
               developer and freelancer based in India, I{`'`}ve been coding
               since 2019 and have been freelancing and working since 2022. I
               also <Tip name="love" tip="<3" /> contributing to open source to
-              give back to the community
+              give back to the community.
             </div>
           </div>
         </div>

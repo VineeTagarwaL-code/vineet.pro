@@ -5,7 +5,7 @@ const Projects: Project[] = [
     title: "OrganLink",
     tip: "made in punjab",
     description:
-      "When Life is at sake & time is a factor OrganLink comes for rescue",
+      "When Life is at sake & time is a factor OrganLink comes for rescue.",
     lang: ["Typescript", "NextJs", "WebSockets"],
 
     github: "https://github.com/VineeTagarwaL-code/OrganLink",
@@ -21,7 +21,7 @@ const Projects: Project[] = [
   {
     title: "SunoSathMe",
     tip: "made in 127.0.0.1",
-    description: "Jam with your freinds on the go",
+    description: "Jam with your freinds on the go.",
     lang: ["NextJs", "WebSockets", "Spotify API", "Typescript"],
     onProgress: true,
 
@@ -30,7 +30,7 @@ const Projects: Project[] = [
   {
     title: "Vineet.tech",
     tip: "made in localhost",
-    description: "A portfolio handcrafter by me in 7hours",
+    description: "A portfolio handcrafter by me in 7hours.",
     lang: ["NextJs", "WebSockets", "Shadcn", "Framer-motion", "Discord"],
 
     link: "https://vineet.tech/",

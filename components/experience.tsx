@@ -13,9 +13,9 @@ const experience: experienceType[] = [
     location: "Remote, USA",
     description: [
       `Developed a prototype to integrate real-time Discord announcements into the extension for enhanced functionality,
-            Resulting a 25% boost in user retention`,
+            Resulting a 25% boost in user retention.`,
       "Optimizatized backend, reducing response time by 100ms and enhancing flexibility for future modifications.",
-      "Improved user experience and retention by 50% through UI issue resolution and enhanced responsiveness",
+      "Improved user experience and retention by 50% through UI issue resolution and enhanced responsiveness.",
     ],
     lang: [
       "Javascript",
@@ -37,9 +37,9 @@ const experience: experienceType[] = [
     endDate: "Present",
     location: "Remote",
     description: [
-      "Improved the performance and visuals of Next.js-based full-Stack website that boosted user retention by 40%",
+      "Improved the performance and visuals of Next.js-based full-Stack website that boosted user retention by 40%.",
       "Built tools for client automating their Discord server store which resulted in an 80% increase in profits.",
-      "Eliminated 100% manual updates in Next.js-based Full Stack app by integration CMS",
+      "Eliminated 100% manual updates in Next.js-based Full Stack app by integration CMS.",
     ],
     lang: [
       "Javascript",
@@ -62,9 +62,9 @@ const experience: experienceType[] = [
     endDate: "Present",
     location: "Remote",
     description: [
-      "Awarded $50 bounty for enhancing a video player for an ed-tech website, benefiting over 10k students.(",
+      "Awarded $50 bounty for enhancing a video player for an ed-tech website, benefiting over 10k students.",
       "Awarded $500 Bounty for Assisting in adding thumbnail preview in video player.",
-      "Completed IIT-Kharagpur open-source competition by merging 2 PRs into its projects(",
+      "Completed IIT-Kharagpur open-source competition by merging 2 PRs into its projects.",
     ],
     lang: [
       "Javascript",
