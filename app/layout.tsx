@@ -31,7 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/image.ico" sizes="32x32" />
-        <script defer src="https://analytics.us.umami.is/script.js" data-website-id="c3b5ab9c-c688-4432-af2c-e04fe5779ca5"></script>
+        <script
+          defer
+          src="https://analytics.us.umami.is/script.js"
+          data-website-id="c3b5ab9c-c688-4432-af2c-e04fe5779ca5"
+        ></script>
       </Head>
       <body
         className={cn(
