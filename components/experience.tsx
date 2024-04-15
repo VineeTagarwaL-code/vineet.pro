@@ -26,7 +26,7 @@ const experience: experienceType[] = [
       "Nodejs",
       "figma",
       "NextJs",
-      "Typecript",
+      "Typescript",
     ],
   },
   {
@@ -51,7 +51,7 @@ const experience: experienceType[] = [
       "NextJs",
       "figma",
       "Discord API",
-      "Typecript",
+      "Typescript",
     ],
   },
   {
@@ -76,7 +76,7 @@ const experience: experienceType[] = [
       "NextJs",
       "figma",
       "Discord API",
-      "Typecript",
+      "Typescript",
     ],
   },
   {
@@ -92,7 +92,7 @@ const experience: experienceType[] = [
       "Utilized AWS S3 to store and serve images for the application.",
       "Implemented a CI/CD pipeline using GitHub Actions and AWS Elastic Beanstalk.",
     ],
-    lang: ["Javascript", "React", "RESTful API", "Nodejs", "Typecript"],
+    lang: ["Javascript", "React", "RESTful API", "Nodejs", "Typescript"],
   },
 ];
 export const Experience = () => {
