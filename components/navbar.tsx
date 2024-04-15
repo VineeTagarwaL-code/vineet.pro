@@ -11,7 +11,7 @@ export const Navbar = () => {
     pathName = "/writing";
   }
 
-  const [hoveredPath, setHoveredPath] = useState<string | null>(pathName);
+  const [hoveredPath, setHoveredPath] = useState<string | null>("top");
 
   return (
     <div className="md:flex justify-center items-center hidden ">
