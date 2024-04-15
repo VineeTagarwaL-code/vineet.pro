@@ -22,10 +22,10 @@ export const Navbar = () => {
 
             return (
               <Link
-              spy={true}
-              smooth={true}
-              duration={500}
-              to ={item.to}
+                spy={true}
+                smooth={true}
+                duration={500}
+                to={item.to}
                 key={item.path}
                 className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${
                   isActive ? "text-zinc-100" : "text-zinc-400"

@@ -2,17 +2,17 @@ const Navlinks = [
   {
     path: "/",
     name: "/",
-    to:'top'
+    to: "top",
   },
   {
     path: "/work",
     name: "work",
-    to:'work'
+    to: "work",
   },
   {
     path: "/projects",
     name: "projects",
-    to:'projects'
+    to: "projects",
   },
 ];
 
