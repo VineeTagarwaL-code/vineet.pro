@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
