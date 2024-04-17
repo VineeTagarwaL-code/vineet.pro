@@ -25,7 +25,7 @@ const FooterLink = [
 export const Footer = () => {
   return (
     <SectionWrapper>
-      <footer className=" text-white flex flex-col gap-4 md:gap-0 pb-14 md:flex-row justify-between border-t-[1px] py-6 md:py-8 mt-12 border-cyan-200/10 border-solid rounded-md">
+      <footer className=" text-white flex flex-col gap-4 md:gap-0  md:flex-row justify-between border-t-[1px] pt-6  md:py-8 mt-12 border-cyan-200/10 border-solid rounded-md">
         <div className="flex justify-center items-center gap-12  ">
           {FooterLink.map((link, index) => {
             return (
