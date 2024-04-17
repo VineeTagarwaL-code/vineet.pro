@@ -65,7 +65,7 @@ export const DiscordPresence = () => {
   useEffect(() => {
     async function connect() {
       let lanyard = new WebSocket("wss://api.lanyard.rest/socket");
-      lanyard.onopen = () => console.log("Connected to Lanyard");
+  
 
       lanyard.onmessage = (event) => {
         let json = JSON.parse(event.data);
@@ -83,7 +83,7 @@ export const DiscordPresence = () => {
         }
 
         const heartbeatInterval = setInterval(() => {
-          console.log("Sending heartbeat");
+
           if (lanyard) {
             lanyard.send(JSON.stringify({ op: 3 }));
           }
