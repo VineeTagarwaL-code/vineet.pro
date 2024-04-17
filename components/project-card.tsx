@@ -13,6 +13,7 @@ export const ProjectCard = (project: Project) => {
   return (
     <motion.div
       whileHover={{ translateY: -2, scale: 1.02 }}
+      whileTap={{ scale: 0.9 }}
       className=" h-[210px] md:h-[225px] cursor-pointer flex flex-col px-4 py-6 justify-between bg-stone-800/20 border-cyan-300/30 border-solid border-[1px] rounded-xl"
     >
       <div className="flex justify-between items-center h-[10%] w-full mb-2">

@@ -9,9 +9,6 @@ export const useStatus = () => {
     async function connect() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       lanyard = new WebSocket(`wss://api.lanyard.rest/socket`);
-      lanyard.onopen = () => {
-        console.log("Connected to Lanyard");
-      };
 
       lanyard.onmessage = (event) => {
         const json = JSON.parse(event.data);
@@ -52,6 +49,5 @@ export const useStatus = () => {
     };
   }, [pulse]);
 
-  console.log(status, "status");
   return status;
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
-import Script from 'next/script'
+import Script from "next/script";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
@@ -32,7 +32,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/image.ico" sizes="32x32" />
-
       </Head>
       <body
         className={cn(
@@ -43,8 +42,11 @@ export default function RootLayout({
       >
         <Toaster />
         {children}
-        <Script defer src="https://unmani-vercel.vercel.app/script.js" data-website-id="c165cf84-ecb7-4f50-b801-8664643291ad"></Script>
-      
+        <Script
+          defer
+          src="https://unmani-vercel.vercel.app/script.js"
+          data-website-id="c165cf84-ecb7-4f50-b801-8664643291ad"
+        ></Script>
       </body>
     </html>
   );

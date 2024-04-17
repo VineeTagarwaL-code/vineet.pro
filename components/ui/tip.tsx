@@ -56,7 +56,7 @@ export const Tip = ({ tip, name, children, className }: tipprops) => {
           }}
           className="flex justify-center items-center"
         >
-          <div className="border-solid border-2 shadow-2xl border-red-300 flex justify-center items-center px-4 absolute top-[-40px] z-[10] bg-[#ffbe6f] rounded-xl ml-[1px]  ">
+          <div className="border-solid border-2 shadow-2xl border-red-300 flex justify-center items-center px-4 absolute top-[-50px] z-[10] bg-[#ffbe6f] rounded-xl ml-[1px]  ">
             <span className="text-stone-800 font-grotesk text-base">{tip}</span>
             <div className="w-0 h-0 absolute top-[30px] left-1/2 transform -translate-x-1/2 border-l-[10px] border-l-transparent border-t-[15px] border-t-[#ffbe6f] border-r-[10px] border-r-transparent"></div>
           </div>
