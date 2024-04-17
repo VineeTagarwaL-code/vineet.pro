@@ -36,9 +36,9 @@ export const Footer = () => {
           })}
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-foreground font-grotesk text-xl">
+          <div className="text-foreground font-grotesk text-xl">
             Made with <Tip tip="by vineet">{"<"}3</Tip>, Thank You!
-          </p>
+          </div>
         </div>
       </footer>
     </SectionWrapper>
