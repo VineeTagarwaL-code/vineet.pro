@@ -39,11 +39,7 @@ export const Cursor = ({ cursorClass }: cursorProp) => {
   };
   useEffect(() => {
     const handleMouseMove = (e: any) => {
-
-
       animateTrailer(e);
-
-
     };
 
     window.addEventListener("mousemove", handleMouseMove);

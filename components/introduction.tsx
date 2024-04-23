@@ -44,7 +44,7 @@ export const Introduction = () => {
               userId="1018532712455352330"
               username={"vineet"}
               acitivityImageContainer="h-[100px] w-[100px]"
-              acitivityContainer="bg-transparent"
+              acitivityContainer="bg-transparent px-0"
               activityClass="text-cyan-300"
               acitvityDetailContainer="gap-1"
               detailsClass="text-[#ffbe6f]"
