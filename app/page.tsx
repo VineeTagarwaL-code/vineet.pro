@@ -26,9 +26,7 @@ export default function Home() {
       <Project />
       <Footer />
       <MobileNavbar />
-      <Cursor
-        cursorClass="border-purple-500"
-      />
+      <Cursor cursorClass="border-purple-500 hidden md:inline-block" />
     </main>
   );
 }
