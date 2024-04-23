@@ -8,6 +8,7 @@ import { Project } from "@/components/projects";
 import { Footer } from "@/components/footer";
 import { MobileNavbar } from "@/components/mobile-footer";
 import { useEffect } from "react";
+import { Cursor } from "@/components/ui/cursor";
 export default function Home() {
   useEffect(() => {
     console.log("Hello there ! ( ͡° ͜ʖ ͡°) ");
@@ -25,6 +26,9 @@ export default function Home() {
       <Project />
       <Footer />
       <MobileNavbar />
+      <Cursor
+        cursorClass="border-purple-500"
+      />
     </main>
   );
 }
