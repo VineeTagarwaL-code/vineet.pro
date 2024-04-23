@@ -4,7 +4,7 @@ import { IntroCont } from "./intro-cont";
 import myImage from "../assests/images/image.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import { DiscordPresence } from "./discord-presence";
+import { DiscordPresence } from "./ui/discord";
 import { Tip } from "./ui/tip";
 import { CardContainer, CardItem } from "./3d-card";
 
@@ -40,7 +40,17 @@ export const Introduction = () => {
             <p className="font-jetbrain mb-4 text-2xl text-sky-200/95 md:hidden">
               activity
             </p>
-            <DiscordPresence />
+            <DiscordPresence userId="1018532712455352330" username={"vineet"}
+            acitivityImageContainer="h-[100px] w-[100px]"
+            acitivityContainer="bg-transparent"
+            activityClass="text-cyan-300"
+            acitvityDetailContainer="gap-1"
+            detailsClass="text-[#ffbe6f]"
+            progressBarClass="bg-[#ffbe6f]"
+            stateClass="text-[#BF9DEA]"
+            userClass="text-[#ffbe6f]"
+            timeClass="text-green-300"
+            />
           </div>
           <div className="md:w-[50%]" id="bio">
             <p className="font-jetbrain mb-4 text-2xl text-sky-200/95 md:hidden">
