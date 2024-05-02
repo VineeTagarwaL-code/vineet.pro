@@ -3,7 +3,30 @@ import { SectionWrapper } from "./section-wrapper";
 import { Experience as experienceType } from "@/lib/types";
 import { Work } from "./work";
 
+
 const experience: experienceType[] = [
+  {
+    title: "Software Engineer Intern",
+    company: "Devkit",
+    tip: "Currently Working Here",
+    startDate: "May 2024",
+    endDate: "Present",
+    location: "Remote, India",
+    description: [
+      `Built Nextjs Based landing page for the company, resulting in a 30% increase in user engagement.`,
+    ],
+    lang: [
+      "Javascript",
+      "Typescript",
+      "Python",
+      "WebSockets",
+      "RESTful API",
+      "Nodejs",
+      "Fima",
+      "NextJs",
+      "Typescript",
+    ],
+  },
   {
     title: "Full Stack Engineer Intern",
     company: "useForward",
