@@ -3,7 +3,6 @@ import { SectionWrapper } from "./section-wrapper";
 import { Experience as experienceType } from "@/lib/types";
 import { Work } from "./work";
 
-
 const experience: experienceType[] = [
   {
     title: "Software Engineer Intern",
