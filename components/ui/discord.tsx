@@ -298,13 +298,13 @@ const useDiscord = (userId: string) => {
               console.log("hi");
               setIsActivity(false);
               setIsListeningToSpotify(false);
-              setNoActivity(false);
-              setDiscordUser(data.discord_user);
+              setNoActivity(true);
+              setDiscordUser(data);
               return;
             }
             setActivity(data.activities[0]);
-            setIsActivity(false);
-            setNoActivity(true);
+            setIsActivity(true);
+            setNoActivity(false);
             setDiscordUser(data.discord_user);
             setIsListeningToSpotify(false);
           } else {
