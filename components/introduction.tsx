@@ -41,7 +41,7 @@ export const Introduction = () => {
               activity
             </p>
             <DiscordPresence
-              userId="1018532712455352330"
+              userId={process.env.NEXT_PUBLIC_DISCORD_USER_ID || ""}
               username={"vineet"}
               acitivityImageContainer="h-[100px] w-[100px]"
               acitivityContainer="bg-transparent px-0 px-2"
