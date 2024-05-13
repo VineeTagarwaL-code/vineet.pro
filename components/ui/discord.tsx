@@ -294,20 +294,21 @@ const useDiscord = (userId: string) => {
             setNoActivity(false);
             setDiscordUser(data.discord_user);
           } else if (data?.activities?.[0]) {
-            if (data.activities[0].name === "Hang Status") {
-              console.log("hi");
-              setIsActivity(false);
-              setIsListeningToSpotify(false);
-              setNoActivity(false);
-              setDiscordUser(data.discord_user);
-              return;
+
+            if(data.activities[0].name === "Hang Status") {
+              console.log("hi")
+              setIsActivity(false)
+              setIsListeningToSpotify(false)
+              setNoActivity(false)
+              setDiscordUser(data.discord_user)
+              return
             }
             setActivity(data.activities[0]);
-            setIsActivity(true);
-            setNoActivity(false);
+            setIsActivity(false);
+            setNoActivity(true);
             setDiscordUser(data.discord_user);
             setIsListeningToSpotify(false);
-          } else {
+          } else  {
             setIsActivity(false);
             setIsListeningToSpotify(false);
             setNoActivity(true);
