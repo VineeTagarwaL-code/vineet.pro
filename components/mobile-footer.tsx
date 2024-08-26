@@ -5,6 +5,7 @@ import { Home } from "@/assests/logos/home";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
 const icons = [
   {
     icon: <Home />,
@@ -18,8 +19,18 @@ const icons = [
     icon: <Work />,
     to: "work",
   },
+  {
+    icon: <MessageCircle className="text-[#ffbe6f]" />,
+    to: "chat",
+  },
 ];
-export const MobileNavbar = () => {
+export const MobileNavbar = ({
+  setshowChat,
+  showChat,
+}: {
+  setshowChat: (value: boolean) => void;
+  showChat: boolean;
+}) => {
   const [selected, setSelected] = useState<string>("top");
   const [scrolled, setScrolled] = useState<boolean>(false);
 
@@ -40,6 +51,9 @@ export const MobileNavbar = () => {
   }, []);
   const handler = (string: any) => {
     setSelected(string);
+    if (string == "chat") {
+      setshowChat(!showChat);
+    }
   };
 
   return (
@@ -56,15 +70,10 @@ export const MobileNavbar = () => {
               return (
                 <div
                   key={index}
+                  onClick={() => handler(icon.to)}
                   className={`flex cursor-pointer justify-center items-center p-2 rounded-full ${selected == icon.to ? "bg-stone-600" : ""}`}
                 >
-                  <Link
-                    to={icon.to}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handler(icon.to)}
-                  >
+                  <Link to={icon.to} spy={true} smooth={true} duration={500}>
                     {icon.icon}
                   </Link>
                 </div>
