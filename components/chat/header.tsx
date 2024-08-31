@@ -2,7 +2,7 @@ import { Eye, Globe } from "lucide-react";
 
 export const ChatHeader = ({ userCount }: { userCount: number }) => {
   return (
-    <div className="bg-[#181825] shadow-3xl h-fit w-full md:w-[350px] px-3 py-2 rounded-t-xl md:mx-2 flex justify-between items-center">
+    <div className="bg-[#181825] shadow-3xl h-fit w-[250px] md:w-[350px] px-3 py-2 rounded-t-xl md:mx-2 flex justify-between items-center">
       <div className="flex justify-start items-center gap-2">
         <Eye size={24} />
         {userCount}
