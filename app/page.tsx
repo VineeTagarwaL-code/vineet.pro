@@ -15,7 +15,7 @@ export default function Home() {
   const [userCount, setUserCount] = useState(0);
   const [Messages, setMessage] = useState([
     {
-      text: "Hello there ! ( ͡° ͜ʖ ͡°) \n For mobile use chat icon  ",
+      text: "Hello there ! ( ͡° ͜ʖ ͡°), \n For mobile use chat icon  ",
       isUser: false,
     },
   ]);

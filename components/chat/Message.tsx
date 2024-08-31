@@ -51,7 +51,7 @@ export const Message = ({
       <div className="flex justify-center items-center relative">
         <input
           type="text"
-          className="bg-white/20 placeholder-white w-full h-8 rounded-xl px-3 py-1 mt-3 text-white outline-none "
+          className="bg-white/20 placeholder-white w-full  h-8 rounded-xl px-3 py-1 mt-3 text-white outline-none  "
           placeholder="Type a message..."
           onKeyDown={(e) => {
             if (e.key === "Enter") {

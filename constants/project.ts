@@ -16,7 +16,7 @@ const Projects: Project[] = [
     description: "What if google meet & Replit had a baby.",
     lang: ["NextJs", "Typescript", "LiveKit", "Judge0 API"],
 
-    github: "https://github.com/VineeTagarwaL-code/OrganLink",
+    github: "https://github.com/VineeTagarwaL-code/devtest",
   },
   {
     title: "GoMon",
