@@ -1,6 +1,7 @@
 "use client";
 import { Email } from "@/assests/logos/email";
 import { Github } from "@/assests/logos/github";
+import { Twitter } from "@/assests/logos/twitter";
 import { Me } from "@/assests/logos/me";
 import { Tea } from "@/assests/logos/tea";
 import { Clipboard } from "lucide-react";
@@ -37,10 +38,10 @@ const icons = [
     },
   },
   {
-    name: "Book a call",
-    icon: <Tea />,
+    name: "Twitter",
+    icon: <Twitter />,
     handler: () => {
-      window.open("https://github.com/vineeTagarwaL-code");
+      window.open("https://x.com/vineeTagarwaL-code");
     },
   },
   {
@@ -57,11 +58,11 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
   const x = useMotionValue(0);
   const translateX = useSpring(
     useTransform(x, [-100, 100], [-50, 50]),
-    springConfig,
+    springConfig
   );
   const rotate = useSpring(
     useTransform(x, [-100, 100], [-45, 45]),
-    springConfig,
+    springConfig
   );
   const { toast } = useToast();
 

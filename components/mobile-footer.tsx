@@ -49,12 +49,6 @@ export const MobileNavbar = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handler = (string: any) => {
-    setSelected(string);
-    if (string == "chat") {
-      setshowChat(!showChat);
-    }
-  };
 
   return (
     <>
@@ -70,10 +64,22 @@ export const MobileNavbar = ({
               return (
                 <div
                   key={index}
-                  onClick={() => handler(icon.to)}
                   className={`flex cursor-pointer justify-center items-center p-2 rounded-full ${selected == icon.to ? "bg-stone-600" : ""}`}
                 >
-                  <Link to={icon.to} spy={true} smooth={true} duration={500}>
+                  <Link
+                    to={icon.to}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={() => {
+                      selected == icon.to
+                        ? setSelected("top")
+                        : setSelected(icon.to);
+                      if (icon.to == "chat") {
+                        setshowChat(!showChat);
+                      }
+                    }}
+                  >
                     {icon.icon}
                   </Link>
                 </div>

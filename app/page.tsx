@@ -25,7 +25,6 @@ export default function Home() {
     socket.onmessage = (event) => {
       let data = event.data;
       data = JSON.parse(data);
-      console.log(data);
       if (data.userCount) {
         setUserCount(data.userCount);
       }
@@ -39,7 +38,7 @@ export default function Home() {
 
     console.log("Hello there ! ( ͡° ͜ʖ ͡°) ");
     console.log(
-      "I see you are lurking around looking for something, code is not open sourced yet but you can always reach out to me at vineetagarwal.now@gmail.com",
+      "I see you are lurking around looking for something, code is not open sourced yet but you can always reach out to me at vineetagarwal.now@gmail.com"
     );
 
     setWs(socket); // Save the WebSocket instance to state

@@ -6,6 +6,7 @@ export const ChatHeader = ({ userCount }: { userCount: number }) => {
       <div className="flex justify-start items-center gap-2">
         <Eye size={24} />
         {userCount}
+        <p> • Public Chat</p>
       </div>
       <div className="flex justify-center items-center gap-3">
         <div className="h-2 w-2 bg-orange-400 block rounded-full " />
