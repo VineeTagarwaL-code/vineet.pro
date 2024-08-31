@@ -8,7 +8,7 @@ export const ResumeButton = () => {
       }}
     >
       <p className="relative text-sm md:text-xl transition-all">
-        Hiring? Check out my{" "}
+        <span className="hidden md:block">Hiring? Check out my </span>
         <span className="bg-primary rounded-full p-3">CV</span>
         <span className="absolute left-0 bottom-0 w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
       </p>
