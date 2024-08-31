@@ -46,7 +46,7 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
 
   const localtime = () => {
     setTime(
-      new Date().toLocaleTimeString("en-US", { timeZone: "Asia/Kolkata" })
+      new Date().toLocaleTimeString("en-US", { timeZone: "Asia/Kolkata" }),
     );
   };
 
@@ -109,7 +109,7 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
       details = details === "Dnd" ? "Do Not Disturb" : details;
       setDetails(details);
       setLargeImage(
-        `https://cdn.discordapp.com/avatars/${userId}/${discordUser?.discord_user.avatar}.png?size=512`
+        `https://cdn.discordapp.com/avatars/${userId}/${discordUser?.discord_user.avatar}.png?size=512`,
       );
       setName(discordUser?.discord_user.username);
       setIsSpotify(false);
@@ -141,13 +141,13 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
     <div
       className={cn(
         "bg-black/90 px-4 py-6 rounded-2xl text-white flex justify-start items-center gap-6 min-w-[320px]",
-        acitivityContainer
+        acitivityContainer,
       )}
     >
       <div
         className={cn(
           "relative mt-1  min-w-[100px] h-[100px] ",
-          acitivityImageContainer
+          acitivityImageContainer,
         )}
       >
         {largeImage == "" ? (
@@ -169,7 +169,7 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
             height={40}
             width={40}
             className={cn(
-              "rounded-full bottom-[-10px] right-0 select-none absolute p-2 bg-black/90"
+              "rounded-full bottom-[-10px] right-0 select-none absolute p-2 bg-black/90",
             )}
             alt="Activity Image"
           />
@@ -178,13 +178,13 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
       <div
         className={cn(
           "flex  flex-col justify-start items-start w-full",
-          acitvityDetailContainer
+          acitvityDetailContainer,
         )}
       >
         <h1
           className={cn(
             "font-grotesk text-lg text-[#ffbe6f] md:text-2xl cursor-pointer",
-            activityClass
+            activityClass,
           )}
         >
           {isSpotify ? (
@@ -200,7 +200,7 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
             "md:text-xl text-md mb-2",
             isSpotify && "mb-3",
             isNoActivity && "mb-0",
-            detailsClass
+            detailsClass,
           )}
         >
           {isSpotify
@@ -219,7 +219,7 @@ const DiscordPresence: React.FC<DiscordPresenceProp> = ({
               "w-full mb-2",
               isSpotify && "mb-2",
               isNoActivity && "mb-0",
-              stateClass
+              stateClass,
             )}
           >
             {isSpotify ? (
@@ -279,7 +279,7 @@ const useDiscord = (userId: string) => {
             JSON.stringify({
               op: 2,
               d: { subscribe_to_id: userId },
-            })
+            }),
           );
         }
         if (opcode == 0) {
@@ -344,14 +344,14 @@ const Progress = React.forwardRef<
     ref={ref}
     className={cn(
       "relative h-4 w-full overflow-hidden rounded-full bg-secondary",
-      className
+      className,
     )}
     {...props}
   >
     <ProgressPrimitive.Indicator
       className={cn(
         "h-full w-full flex-1 bg-white transition-all ",
-        progressBarClass
+        progressBarClass,
       )}
       style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
     />

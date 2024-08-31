@@ -58,11 +58,11 @@ export const IntroCont = ({ name, des }: IntroContProps) => {
   const x = useMotionValue(0);
   const translateX = useSpring(
     useTransform(x, [-100, 100], [-50, 50]),
-    springConfig
+    springConfig,
   );
   const rotate = useSpring(
     useTransform(x, [-100, 100], [-45, 45]),
-    springConfig
+    springConfig,
   );
   const { toast } = useToast();
 

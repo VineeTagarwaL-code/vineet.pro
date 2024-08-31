@@ -19,13 +19,13 @@ const Projects: Project[] = [
     github: "https://github.com/VineeTagarwaL-code/OrganLink",
   },
   {
-    title: "SunoSathMe",
+    title: "GoMon",
     tip: "made in 127.0.0.1",
-    description: "Jam with your freinds on the go.",
-    lang: ["NextJs", "WebSockets", "Spotify API", "Typescript"],
-    onProgress: true,
+    description: "Nodemon alternative for GoLang.",
+    lang: ["Go"],
+    onProgress: false,
 
-    github: "https://github.com/VineeTagarwaL-code/OrganLink",
+    github: "https://github.com/VineeTagarwaL-code/gomon",
   },
   {
     title: "Vineet.tech",

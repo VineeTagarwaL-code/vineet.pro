@@ -65,7 +65,7 @@ export const Message = ({
           className="absolute right-4 top-5 rotate-45 text-white cursor-pointer"
           onClick={() => {
             const inputElement = document.querySelector(
-              "input"
+              "input",
             ) as HTMLInputElement;
             sendMessage(inputElement.value);
             inputElement.value = ""; // Clear input after sending
