@@ -15,7 +15,7 @@ export default function Home() {
   const [userCount, setUserCount] = useState(0);
   const [Messages, setMessage] = useState([
     {
-      text: "Hello there ! ( ͡° ͜ʖ ͡°), \n For mobile use chat icon  ",
+      text: "Hello there ! ( ͡° ͜ʖ ͡°), \n For closing use chat icon in footer ( mobile )  ",
       isUser: false,
     },
   ]);
@@ -41,7 +41,7 @@ export default function Home() {
 
     console.log("Hello there ! ( ͡° ͜ʖ ͡°) ");
     console.log(
-      "I see you are lurking around looking for something, code is not open sourced yet but you can always reach out to me at vineetagarwal.now@gmail.com",
+      "I see you are lurking around looking for something, code is not open sourced yet but you can always reach out to me at vineetagarwal.now@gmail.com"
     );
 
     setWs(socket); // Save the WebSocket instance to state

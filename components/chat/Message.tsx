@@ -20,7 +20,7 @@ export const Message = ({
   }, [Messages]);
 
   return (
-    <div className="px-3 py-4 bg-gray-900/90 rounded-b-xl w-full w-[250px] md:w-[350px] ">
+    <div className="px-3 py-4 bg-gray-900/90 rounded-b-xl  w-[250px] md:w-[350px] ">
       <div className="max-h-[400px] overflow-y-scroll">
         {Messages.map((msg, index) => (
           <div
