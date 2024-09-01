@@ -34,7 +34,7 @@ export default function Home() {
       if (data.type === "message") {
         setMessage((prevMessages) => [
           ...prevMessages,
-          { text: data.message, isUser: false },
+          { text: data.filteredMessage, isUser: false },
         ]);
       }
     };
