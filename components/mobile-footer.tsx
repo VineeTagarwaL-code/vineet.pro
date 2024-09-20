@@ -19,10 +19,10 @@ const icons = [
     icon: <Work />,
     to: "work",
   },
-  {
-    icon: <MessageCircle className="text-[#ffbe6f]" />,
-    to: "chat",
-  },
+  // {
+  //   icon: <MessageCircle className="text-[#ffbe6f]" />,
+  //   to: "chat",
+  // },
 ];
 export const MobileNavbar = ({
   setshowChat,
