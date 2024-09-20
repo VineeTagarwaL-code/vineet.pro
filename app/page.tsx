@@ -63,12 +63,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative scroll-smooth select-none">
-      <Chat
+      {/* <Chat
         userCount={userCount}
         Messages={Messages}
         sendMessage={sendMessage}
         showChat={showChat}
-      />
+      /> */}
       <Navbar />
       <ResumeButton />
       <Introduction />
