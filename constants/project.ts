@@ -5,7 +5,7 @@ const Projects: Project[] = [
     title: "Upbot",
     tip: "Made in Cloud",
     description:
-      "A Serverless deployment monitoring tool solving the cold start problem, ensuring uptime for 100+ servers and processing 50K+ pings daily, Trusted by hundreds of users.",
+      "A Serverless deployment monitoring tool solving the cold start problem.",
     lang: ["Typescript", "NextJs", "Go", "AWS", "Microservices"],
     link: "https://upbot.vineet.pro",
   },
@@ -13,7 +13,15 @@ const Projects: Project[] = [
     title: "Watermark Removal",
     tip: "Made in Cloud",
     description: "A tool to remove watermarks from images.",
-    lang: ["NextJs", "Typescript", "TailwindCSS", "AWS", "Microservices", "Gemini API", "Redis"],
+    lang: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "AWS",
+      "Microservices",
+      "Gemini API",
+      "Redis",
+    ],
 
     link: "https://watermark.vineet.pro",
   },
