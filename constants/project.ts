@@ -2,38 +2,34 @@ import { Project } from "@/lib/types";
 
 const Projects: Project[] = [
   {
-    title: "OrganLink",
-    tip: "made in punjab",
+    title: "Upbot",
+    tip: "Made in Cloud",
     description:
-      "When Life is at sake & time is a factor OrganLink comes for rescue.",
-    lang: ["Typescript", "NextJs", "WebSockets"],
-
-    github: "https://github.com/VineeTagarwaL-code/OrganLink",
+      "A Serverless deployment monitoring tool solving the cold start problem, ensuring uptime for 100+ servers and processing 50K+ pings daily, Trusted by hundreds of users.",
+    lang: ["Typescript", "NextJs", "Go", "AWS", "Microservices"],
+    link: "https://upbot.vineet.pro",
   },
   {
-    title: "DevTest",
-    tip: "made in rourkela",
-    description: "What if google meet & Replit had a baby.",
-    lang: ["NextJs", "Typescript", "LiveKit", "Judge0 API"],
+    title: "Watermark Removal",
+    tip: "Made in Cloud",
+    description: "A tool to remove watermarks from images.",
+    lang: ["NextJs", "Typescript", "TailwindCSS", "AWS", "Microservices", "Gemini API", "Redis"],
 
-    github: "https://github.com/VineeTagarwaL-code/devtest",
+    link: "https://watermark.vineet.pro",
   },
   {
-    title: "GoMon",
-    tip: "made in 127.0.0.1",
-    description: "Nodemon alternative for GoLang.",
-    lang: ["Go"],
-    onProgress: false,
-
-    github: "https://github.com/VineeTagarwaL-code/gomon",
+    title: "V3CN",
+    tip: "Made in Cloud",
+    description: "Get Components like nowhere else.",
+    lang: ["NextJs", "Typescript", "TailwindCSS", "Github API", "Vercel"],
+    link: "https://v3cn.vineet.pro",
   },
   {
-    title: "Vineet.tech",
+    title: "Vineet.pro",
     tip: "made in localhost",
     description: "A portfolio handcrafter by me in 7hours.",
     lang: ["NextJs", "WebSockets", "Shadcn", "Framer-motion", "Discord"],
-
-    link: "https://vineet.tech/",
+    link: "https://vineet.pro",
   },
 ];
 
