@@ -1,20 +1,22 @@
 "use client";
-import { Email } from "@/assests/logos/email";
-import { Github } from "@/assests/logos/github";
-import { Twitter } from "@/assests/logos/twitter";
-import { Me } from "@/assests/logos/me";
-import { Tea } from "@/assests/logos/tea";
-import { Clipboard } from "lucide-react";
+
 import {
-  motion,
-  useTransform,
   AnimatePresence,
+  motion,
   useMotionValue,
   useSpring,
+  useTransform,
 } from "framer-motion";
-import { useState } from "react";
+
+import { Clipboard } from "lucide-react";
+import { Email } from "@/assests/logos/email";
+import { Github } from "@/assests/logos/github";
 import Image from "next/image";
+import { Me } from "@/assests/logos/me";
 import React from "react";
+import { Tea } from "@/assests/logos/tea";
+import { Twitter } from "@/assests/logos/twitter";
+import { useState } from "react";
 import { useToast } from "./ui/use-toast";
 type IntroContProps = {
   name: string;
@@ -41,14 +43,14 @@ const icons = [
     name: "Twitter",
     icon: <Twitter />,
     handler: () => {
-      window.open("https://x.com/vineeTagarwaL-code");
+      window.open("https://x.com/vineetwts");
     },
   },
   {
     name: "Yup, that's me",
     icon: <Me />,
     handler: () => {
-      window.open("https://vineet.tech");
+      window.open("https://vineet.pro");
     },
   },
 ];
