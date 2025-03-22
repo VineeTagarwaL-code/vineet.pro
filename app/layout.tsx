@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
-import { Toaster } from "@/components/ui/toaster";
-import Script from "next/script";
-import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+
+import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
+import type { Metadata } from "next";
+import Script from "next/script";
+import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -49,14 +52,14 @@ export default function RootLayout({
         className={cn(
           inter.className,
           spaceGrotesk.variable,
-          JetBrainsMono.variable,
+          JetBrainsMono.variable
         )}
       >
         <Toaster />
         {children}
         <Script
           defer
-          src="https://unmani-vercel.vercel.app/script.js"
+          src="https://stats.vineet.pro/script.js"
           data-website-id="c165cf84-ecb7-4f50-b801-8664643291ad"
         ></Script>
       </body>
