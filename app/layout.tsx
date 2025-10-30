@@ -52,7 +52,7 @@ export default function RootLayout({
         className={cn(
           inter.className,
           spaceGrotesk.variable,
-          JetBrainsMono.variable
+          JetBrainsMono.variable,
         )}
       >
         <Toaster />
