@@ -1,0 +1,77 @@
+import {
+  SpamKnobs,
+  NumbersWall,
+  RoundingFlip,
+  BitsLab,
+} from "@/components/writing/quantization";
+import { PostHeader, Callout, BigSummary } from "@/components/writing/mdx-ui";
+
+export const metadata = {
+  title: "Quantization, finally explained · vineet",
+  description:
+    "An AI is secretly just a list of numbers. Once you get that, quantization stops being scary. It's basically just rounding.",
+};
+
+<PostHeader
+  title="Quantization, finally explained"
+  date="Jun 24, 2026"
+  readingTime="6 min read"
+  tags={["ml", "explainer"]}
+/>
+
+I spent way too long thinking quantization was some deep, scary thing. It isn't. The whole idea sits on top of one fact that nobody bothers to say out loud: an AI is secretly just a **list of numbers**. Once that clicks, the rest is basically rounding.
+
+Let me build it up slowly. You can poke at each piece as we go.
+
+## It's just a big board of knobs
+
+Say you're building an AI to decide whether an email is **spam**. It looks for clues. Each clue gets a number, its _weight_, that says how much that clue counts toward "yeah, this is spam." To make a call, the AI multiplies each clue by its weight and adds everything up.
+
+Flip the clues on and off and watch the score move:
+
+<SpamKnobs />
+
+So where do those numbers come from? Nobody types them in. **Training** is just the computer finding good knob settings by itself: start random, make a guess, nudge every knob a tiny bit toward the right answer, then do that a few billion times. Whatever the knobs settle on is the finished model.
+
+A spam detector needs four knobs. Something like ChatGPT needs **billions** of them. That's honestly the only difference.
+
+## Billions of long numbers get heavy
+
+Here's the catch. Every knob is stored as a precise number like `0.6817`. Now picture billions of those. The file gets so big it needs expensive, power-hungry GPUs just to sit in memory.
+
+<NumbersWall />
+
+Which raises a pretty obvious question. Do we actually need every single number to be that precise? Turns out, not really.
+
+## Quantization is just rounding
+
+That's the whole move. Walk down the giant list of knobs and round each one to something shorter. Shorter numbers take up less room, so the model gets smaller and faster.
+
+<RoundingFlip />
+
+## What "8-bit" and "4-bit" actually mean
+
+There's one rule to hold onto: **more bits means more allowed values, which means gentler rounding.**
+
+The easiest way I found to feel this is rounding a price. The fewer round numbers you're allowed to use, the further off you end up. Same thing happens to the weights.
+
+Flip between **8-bit, 4-bit and 2-bit** below. The same buttons also drive the size-versus-accuracy tradeoff, so you can watch what each choice actually costs:
+
+<BitsLab />
+
+<Callout tone="teal">
+Here's the nice part. Across billions of weights, all those tiny rounding errors
+mostly **cancel out**, so 8-bit barely hurts while cutting the size in half. Push
+to 4-bit and you save more for a small drop in quality. Go all the way to 2-bit
+and the errors stop cancelling, and the model starts giving you nonsense.
+</Callout>
+
+So that's really it. No magic, no scary math.
+
+<BigSummary>
+An AI is a <span className="text-[#94e2d5]">huge list of numbers</span>.
+Quantization <span className="text-[#f9e2af]">rounds them off</span> to save
+room. <span className="text-[#f38ba8]">Fewer bits means fewer values to round
+to</span>, so you get something smaller and faster that eventually turns dumb if
+you push it too far.
+</BigSummary>

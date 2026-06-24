@@ -1,15 +1,18 @@
 "use client";
 import Navlinks from "@/constants/navlink";
 import { usePathname } from "next/navigation";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import NextLink from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+
 export const Navbar = () => {
   let pathName = usePathname() || "/";
-  if (pathName.includes("/writing/")) {
+  if (pathName.includes("/writing")) {
     pathName = "/writing";
   }
+  const onHome = pathName === "/";
 
   const [hoveredPath, setHoveredPath] = useState<string | null>("top");
 
@@ -17,24 +20,18 @@ export const Navbar = () => {
     <div className="md:flex justify-center items-center hidden ">
       <div className="rounded-full mb-12 z-[10000000]  backdrop-blur-md  px-16 py-6 mt-3 ">
         <nav className="flex gap-[100px] relative justify-start w-full z-[100]  rounded-lg">
-          {Navlinks.map((item, index) => {
+          {Navlinks.map((item) => {
             const isActive = item.path === pathName;
+            const linkClass = `px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${
+              isActive ? "text-zinc-100" : "text-zinc-400"
+            }`;
+            const handlers = {
+              onMouseOver: () => setHoveredPath(item.to),
+              onMouseLeave: () => setHoveredPath("top"),
+            };
 
-            return (
-              <Link
-                spy={true}
-                smooth={true}
-                duration={500}
-                to={item.to}
-                key={item.path}
-                className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in bg-transparent ${
-                  isActive ? "text-zinc-100" : "text-zinc-400"
-                }`}
-                data-active={isActive}
-                href={item.path}
-                onMouseOver={() => setHoveredPath(item.to)}
-                onMouseLeave={() => setHoveredPath("top")}
-              >
+            const inner = (
+              <>
                 <span
                   className={cn(
                     "font-jetbrain  text-xl",
@@ -48,9 +45,7 @@ export const Navbar = () => {
                     className="absolute bottom-0 left-0 h-full bg-[#CBA6F7]/70 rounded-full -z-10"
                     layoutId="navbar"
                     aria-hidden="true"
-                    style={{
-                      width: "100%",
-                    }}
+                    style={{ width: "100%" }}
                     transition={{
                       type: "spring",
                       bounce: 0.25,
@@ -60,7 +55,41 @@ export const Navbar = () => {
                     }}
                   />
                 )}
-              </Link>
+              </>
+            );
+
+            // Route links (e.g. /writing) and section links when we're off the
+            // home page both use next/link. Section links on home keep the
+            // smooth react-scroll behaviour.
+            if (item.route || !onHome) {
+              const href = item.route ? item.path : `/#${item.to}`;
+              return (
+                <NextLink
+                  key={item.path}
+                  href={href}
+                  className={linkClass}
+                  data-active={isActive}
+                  {...handlers}
+                >
+                  {inner}
+                </NextLink>
+              );
+            }
+
+            return (
+              <ScrollLink
+                spy={true}
+                smooth={true}
+                duration={500}
+                to={item.to}
+                key={item.path}
+                className={linkClass}
+                data-active={isActive}
+                href={item.path}
+                {...handlers}
+              >
+                {inner}
+              </ScrollLink>
             );
           })}
         </nav>

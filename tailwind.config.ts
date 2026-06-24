@@ -4,10 +4,11 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,md,mdx}",
+    "./components/**/*.{ts,tsx,md,mdx}",
+    "./app/**/*.{ts,tsx,md,mdx}",
     "./src/**/*.{ts,tsx}",
+    "./mdx-components.tsx",
   ],
   prefix: "",
   theme: {
