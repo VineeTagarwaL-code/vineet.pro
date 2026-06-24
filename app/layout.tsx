@@ -57,6 +57,7 @@ export default function RootLayout({
       >
         <Toaster />
         {children}
+        <Analytics />
         <Script
           defer
           src="https://stats.vineet.pro/script.js"
