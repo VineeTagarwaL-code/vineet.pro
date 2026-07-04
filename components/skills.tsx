@@ -6,7 +6,6 @@ import { Python } from "@/assests/logos/python";
 import { Typescript } from "@/assests/logos/typescript";
 import { Bash } from "@/assests/logos/bash";
 import React from "react";
-import { Java } from "@/assests/logos/java";
 import { Next } from "@/assests/logos/next";
 import { Aws } from "@/assests/logos/aws";
 import { Azure } from "@/assests/logos/azure";
@@ -37,10 +36,6 @@ const languages: skillType[] = [
   {
     name: "python",
     logo: <Python />,
-  },
-  {
-    name: "Java",
-    logo: <Java />,
   },
 ];
 const cloud: skillType[] = [
@@ -96,6 +91,10 @@ const databases: skillType[] = [
 ];
 
 const tools: skillType[] = [
+  {
+    name: "Docker",
+    logo: <Docker />,
+  },
   {
     name: "Bash",
     logo: <Bash />,

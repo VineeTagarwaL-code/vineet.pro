@@ -60,9 +60,9 @@ export const Introduction = () => {
               -year-old AI engineer from India. I was part of the core team
               behind{" "}
               <Link href="https://interfaze.ai" target="_blank">
-                <Tip name="interfaze.ai" tip="the LLM built for developers" />
-              </Link>{" "}
-              at JigsawStack. I love creating tools that help developers move
+                <Tip name="interfaze.ai" tip="the LLM built for developers (YC P26)" />
+              </Link>
+              . I love creating tools that help developers move
               faster and build smarter. In my free time, you’ll usually find me
               contributing to open-source projects or out riding my bike.
             </div>

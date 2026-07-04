@@ -6,6 +6,7 @@ import { Introduction } from "@/components/introduction";
 import { Skills } from "@/components/skills";
 import { Experience } from "@/components/experience";
 import { Project } from "@/components/projects";
+import { Research } from "@/components/research";
 import { Footer } from "@/components/footer";
 import { MobileNavbar } from "@/components/mobile-footer";
 import { Cursor } from "@/components/ui/cursor";
@@ -74,6 +75,7 @@ export default function Home() {
       <Introduction />
       <Skills />
       <Experience />
+      <Research />
       <Project />
       <Footer />
       <MobileNavbar setshowChat={setShowChat} showChat={showChat} />

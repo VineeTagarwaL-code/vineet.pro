@@ -6,17 +6,17 @@ import { Work } from "./work";
 const experience: experienceType[] = [
   {
     title: "Founding AI Engineer",
-    company: "JigsawStack",
+    company: "Interfaze (YC P26)",
     tip: "Currently Working Here",
     startDate: "May 2025",
     endDate: "Present",
     location: "Remote, USA",
     description: [
-      "Built Interfaze - an LLM optimized for developers that intelligently combines SLMs and LLMs to enable faster, smarter AI development.",
-      "Revamped Google Translate experience by creating a lightning-fast translation widget that translates entire web pages in under a second.",
-      "Re-engineered the core web search API to deliver higher accuracy, broader query coverage, and significantly improved response times.",
+      "Built v1 of Interfaze - an LLM platform that intelligently orchestrates SLMs and LLMs for faster, more cost-efficient, and scalable AI development - the core product behind the company's acceptance into Y Combinator.",
+      "Re-engineered v2 of core engines end to end, including the web search and scraper APIs, improving response times, query coverage, and result accuracy.",
+      "Shipped a high-performance translation widget that renders full web pages in under one second, now running in production for European companies.",
       "Refactored the file upload API, reducing upload time by 80% while improving scalability and reliability.",
-      "Continuously monitoring and optimizing the performance and efficiency of core services across JigsawStack.",
+      "Own and maintain core platform services, monitoring and optimizing performance, stability, and resource efficiency across production.",
     ],
     lang: [
       "Javascript",
@@ -39,11 +39,10 @@ const experience: experienceType[] = [
     endDate: "May 2025",
     location: "Remote, USA",
     description: [
-      `Built a concert price comparison extension in 1 month, delivering the best options across multiple sites within 5s.`,
-      `Built the core backend system for optimized performance, ensuring it meets user expectations`,
-      `Integrated Redis and Cron jobs to automate workflows, resulting in saving our costs by 70%`,
-      `Solved Numerous issues and adopted various optimization measure to reduce response time to meet user expectations`,
-      `Resolved the complex challenge of matching artist names with events across different ticketing websites and timezones`,
+      `Developed an end-to-end price tracking and comparison engine for concert tickets, optimizing search queries to deliver results in under 5 seconds for US users.`,
+      `Engineered efficient browser-based scrapers, eliminating proxy dependencies and cutting costs entirely.`,
+      `Designed a data normalization pipeline to resolve inconsistent artist names and event details across ticketing platforms, improving accuracy by 95%.`,
+      `Built end-to-end deployment & staging pipelines with GitHub Actions, Bash, Docker, AWS, and Docker Swarm to manage a highly available cluster.`,
     ],
     lang: [
       "Javascript",

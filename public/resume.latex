@@ -1,0 +1,91 @@
+\documentclass{resume}  % Custom resume style
+
+% Custom commands
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}  % Right-align content
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}  % No space adjustment
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+   fullname={Vineet Agarwal},
+   email={vineetagarwal.now@gmail.com},
+   phone={+91-8617000910},
+   linkedin={linkedin.com/in/vineetagarwal2004},
+   github={github.com/VineeTagarwaL-code}
+]
+
+Founding AI Engineer working at the intersection of backend and AI, part of the core team behind Interfaze (YC P26). I build developer tools and consumer products used by thousands worldwide.
+
+% --------- Skills -----------
+\begin{skillsSection}{Skills}
+    \skillItem[
+        category={AI/ML},
+        skills={LLMs, SLMs, RAG, Prompt Engineering, AI-SDK, AI Coding Agents (Claude Code, Codex).}
+    ]\\
+    \skillItem[
+        category={Databases},
+        skills={PostgreSQL, MySQL, MongoDB, Redis, SQLite, Supabase.}
+    ]\\
+    \skillItem[
+        category={Cloud \& DevOps},
+        skills={Docker, Kubernetes, AWS, Cloudflare, Azure, Vercel, NGINX, CI/CD (GitHub Actions).}
+    ]\\
+    \skillItem[
+        category={Backend},
+        skills={Node.js, Go, Python, TypeScript, WebSockets, RESTful APIs.}
+    ]\\
+    \skillItem[
+        category={Frontend},
+        skills={React.js, Next.js, Vue.js, React Native, Tailwind CSS, Framer Motion, MUI.}
+    ]
+\end{skillsSection}
+
+
+% --------- Experience ---------
+\begin{experienceSection}{Experience}
+   \textbf{Interfaze (YC P26) – Founding AI Engineer} \hfill May 2025 – Present
+\begin{itemize}
+    \item Built v1 of Interfaze, an LLM platform that intelligently orchestrates SLMs and LLMs for faster, more cost-efficient, and scalable AI development — the core product behind the company's acceptance into Y Combinator.
+    \item Re-engineered v2 of core engines end to end, including the web search and scraper APIs, improving response times, query coverage, and result accuracy.
+    \item Shipped a high-performance translation widget that renders full web pages in under one second, now running in production for European companies.
+    \item Own and maintain core platform services, monitoring and optimizing performance, stability, and resource efficiency across production.
+\end{itemize}
+
+ \textbf{ConcertPal – Founding Engineer} \hfill Jun 2024 – May 2025
+\begin{itemize}
+    \item Developed an end-to-end price tracking and comparison engine for concert tickets, optimizing search queries to deliver results in under 5 seconds for US users.
+    \item Engineered efficient browser-based scrapers, eliminating proxy dependencies and cutting costs entirely.
+    \item Designed a data normalization pipeline to resolve inconsistent artist names and event details across ticketing platforms, improving accuracy by 95\%.
+    \item Built end-to-end deployment \& staging pipelines with GitHub Actions, Bash, Docker, AWS, and Docker Swarm to manage a highly available cluster.
+\end{itemize}
+
+   \textbf{100xDevs – Open Source Maintainer} \hfill Aug 2024 – Nov 2024 \begin{itemize}
+    \item Reviewed and merged 200+ contributions from a team of 70+ developers, improving collaboration and code quality.
+    \item Spearheaded feature development, conducted in-depth code reviews, and resolved critical issues, ensuring high-quality contributions and seamless CI/CD workflows.
+    \item Optimized and scaled containerized workloads using Docker and Kubernetes.
+    \end{itemize}
+ \end{experienceSection}
+
+
+
+\begin{experienceSection}{Projects}
+  \item \textbf{Interfaze-Beta -} {A native hybrid model that fuses task-specific deep neural networks (CNNs and DNNs) directly into a transformer decoder. Achieves 70.7\% on OCRBench v2, 85.7\% on olmOCR, 82.1\% on RefCOCO, 92.4\% on GPQA-Diamond, and 90.0\% on AIME-2025.}
+
+  \item \textbf{Translation Widget -} {A lightning-fast, embeddable translation widget capable of translating full web pages in under one second.} \href{https://github.com/JigsawStack/translation-widget}{(GitHub)}
+
+  \item \textbf{Deep Research -} {A framework for conducting deep, multi-hop research with reasoning capabilities. Built with TypeScript and the AI-SDK.} \href{https://github.com/JigsawStack/deep-research}{(GitHub)}
+
+  \item \textbf{V3CN -} {A specialized UI library for Next.js and React, featuring unique components and a custom utility for effortless component distribution. Adopted by 100+ developers.} \href{https://v3cn.dev}{(Live)}
+\end{experienceSection}
+
+\begin{experienceSection}{Achievements}
+  \item Co-author of \textit{``Interfaze: The Future of AI is Built on Task-Specific Small Models''} \href{https://arxiv.org/abs/2602.04101}{(arXiv:2602.04101)}.
+  \item Co-author of \textit{``The Structured Output Benchmark: A Multi-Source Benchmark for Evaluating Structured Output Quality in Large Language Models''} \href{https://arxiv.org/abs/2604.25359}{(arXiv:2604.25359)}.
+  \item Built a 10k+ following on Twitter, where I create content around tech, engineering, and building in public.
+\end{experienceSection}
+
+\begin{educationSection}{Education}
+  {\bf Bachelor of Computer Applications}, Dr. B.C. Roy Engineering College \hfill {Sep 2022 -- Jul 2025}
+\end{educationSection}
+\end{document}

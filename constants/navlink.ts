@@ -23,6 +23,11 @@ const Navlinks: NavItem[] = [
     to: "projects",
   },
   {
+    path: "/research",
+    name: "research",
+    to: "research",
+  },
+  {
     path: "/writing",
     name: "writing",
     to: "writing",
